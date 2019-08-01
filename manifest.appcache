@@ -34,7 +34,6 @@ js/vendor/jquery.uniform/jquery.uniform.min.js
 js/vendor/jquery.uniform/uniform.default.css
 js/vendor/jquery.magnific-popup/magnific-popup.css
 js/vendor/jarallax.min.js
-js/main.js
 js/vendor/jquery-migrate-1.2.1.min.js
 js/vendor/jquery.address-1.5.min.js
 js/vendor/nprogress/nprogress.js
@@ -44,7 +43,6 @@ js/vendor/socialstream.jquery.js
 #css
 css/768.css
 css/align.css
-css/main.css
 css/bootstrap.min.css
 css/animations.css
 css/fonts/fontello/css/fontello.css
