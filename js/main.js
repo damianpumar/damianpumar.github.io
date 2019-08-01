@@ -817,16 +817,27 @@ var typist = {
 
 var snackBar = {
 
-    initialize: function initialize() {
-        var snackbar = document.getElementById("snackbar");
+			initialize: function initialize() {
 
-        if (snackbar) {
-            snackbar.className = "show";
-            window.setTimeout(function () {
-                snackbar.className = "hide";
-            }, 6000);
-        }
-    }
+						var snackBarWasShown = $.cookie("_sbSW");
+
+						if (!snackBarWasShown) {
+									var snackbar = document.getElementById("snackbar");
+
+									if (snackbar) {
+												snackbar.className = "show";
+												window.setTimeout(function () {
+															snackbar.className = "hide";
+												}, 6000);
+
+												var expireDate = new Date();
+
+												expireDate.setDate(expireDate.getDate() + 2);
+
+												$.cookie("_sbSW", "true", { path: '/', expires: expireDate });
+									}
+						}
+			}
 
 };
 
@@ -980,6 +991,7 @@ var initializer = {
         form.applyValidators();
         email.initialize();
         page.initialize();
+        snackBar.initialize();
     }
 };
 

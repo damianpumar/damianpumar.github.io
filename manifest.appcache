@@ -22,6 +22,7 @@ images/testimonials/4.jpg
 
 #js
 js/vendor/jquery-1.12.1.min.js
+js/vendor/jquery.cookie.js
 js/vendor/fastclick.js
 js/vendor/modernizr.min.js
 js/vendor/nprogress/nprogress.css
