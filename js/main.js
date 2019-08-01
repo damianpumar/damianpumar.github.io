@@ -23,6 +23,22 @@ var maginNumber = 31557600000;
 
 var utilities = {
 
+    loadImagesAsync: function loadImagesAsync() {
+        // Page is loaded
+
+        var objects = document.getElementsByClassName('asyncImage');
+        Array.from(objects).map(function (item) {
+            // Start loading image
+            var img = new Image();
+            img.src = item.dataset.src;
+            // Once image is loaded replace the src of the HTML element
+            img.onload = function () {
+                item.classList.remove('asyncImage');
+                return item.nodeName === 'IMG' ? item.src = item.dataset.src : item.style.backgroundImage = 'url(' + item.dataset.src + ')';
+            };
+        });
+    },
+
     initializeHoursWorked: function initializeHoursWorked() {
         var startWork = new Date(2011, 1, 1, 0, 0);
         var now = new Date();
@@ -954,6 +970,7 @@ var email = {
 
 var initializer = {
     initialize: function initialize() {
+        utilities.loadImagesAsync();
         loader.show();
         maps.intialize();
         utilities.initializeFillBars();
