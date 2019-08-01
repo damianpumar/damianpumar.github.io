@@ -11,11 +11,14 @@ images/bckg/loading-light.gif
 images/site/avatar.jpg
 images/site/home.jpg
 images/ico/favicon.ico
-images/testimonials/2332sgks.jpg
 images/site/icon-01.png
 images/site/icon-02.png
 images/site/icon-03.png
 images/site/icon-04.png
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
 
 #js
 js/vendor/jquery-1.12.1.min.js
