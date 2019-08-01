@@ -139,8 +139,7 @@
  .portfolio-nav a:before,
  .hentry .entry-header:before,
  .gallery-item a:after {
-     display: inline-blo
-     ck;
+     display: inline-block;
      font-family: 'Pe-icon-7-stroke';
      speak: none;
      font-style: normal;
