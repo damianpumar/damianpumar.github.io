@@ -9,8 +9,6 @@ css/bootstrap.min.css
 css/main.css
 js/main.js
 images/bckg/loading-light.gif
-images/ico/apple-touch-icon.png
-images/ico/favicon.ico
 images/site/avatar.jpg
 images/site/avatar_metadata.jpg
 images/site/home.jpg
@@ -18,6 +16,8 @@ images/site/icon-01.png
 images/site/icon-02.png
 images/site/icon-03.png
 images/site/icon-04.png
+images/ico/apple-touch-icon.png
+images/ico/favicon.ico
 images/testimonials/1.jpg
 images/testimonials/2.jpg
 images/testimonials/3.jpg
@@ -64,4 +64,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 224e8f16e31084f97d38f2258a7bea7fd33c175aee5228a6aa3941bdbcc502f8
+# hash: 03bd8796370840d49ee315260d1bdcc0df5e2a39a526133c8d3161653674ca48
