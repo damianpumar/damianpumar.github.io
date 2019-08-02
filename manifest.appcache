@@ -43,18 +43,18 @@ js/vendor/jquery.uniform/jquery.uniform.min.js
 js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
-css/fonts/fontello/css/fontello.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/fontello/css/fontello.css
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.woff
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroked41d.eot
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 
 NETWORK:
 http://*
@@ -64,4 +64,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 8e299aa53448bfbc5e352a0cce42852eb6f66fd93cc3593733f728fbbc512123
+# hash: 00c427907eb6f56f3b2e969ea6a9d71c3c12c29f4b5f000ceee973683d44ab2f
