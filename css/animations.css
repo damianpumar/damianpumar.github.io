@@ -1,5 +1,5 @@
 /*!
- * FullCoders v1.18.0117.1 (https://www.fullcoders.com)
+ * FullCoders v2.8.19 (https://www.fullcoders.com)
  * Copyright 2019 FullCoders
  * Licensed under MIT (https://github.com/damianpumar/MyResume)
  */
