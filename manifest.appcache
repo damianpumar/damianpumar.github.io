@@ -9,6 +9,12 @@ css/bootstrap.min.css
 css/main.css
 js/main.js
 images/bckg/loading-light.gif
+images/ico/apple-touch-icon.png
+images/ico/favicon.ico
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
 images/site/avatar.jpg
 images/site/avatar_metadata.jpg
 images/site/home.jpg
@@ -16,12 +22,6 @@ images/site/icon-01.png
 images/site/icon-02.png
 images/site/icon-03.png
 images/site/icon-04.png
-images/ico/apple-touch-icon.png
-images/ico/favicon.ico
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
 js/vendor/fastclick.js
 js/vendor/imagesloaded.pkgd.min.js
 js/vendor/jarallax-video.min.js
@@ -64,4 +64,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 03bd8796370840d49ee315260d1bdcc0df5e2a39a526133c8d3161653674ca48
+# hash: bd4fd48e2e401862d69ddbe6903daefc84e107ec1656dfc90d0949274b76c770
