@@ -2,12 +2,27 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-js/main.js
 css/768.css
 css/align.css
 css/animations.css
 css/bootstrap.min.css
 css/main.css
+js/main.js
+images/bckg/loading-light.gif
+images/ico/apple-touch-icon.png
+images/ico/favicon.ico
+images/site/avatar.jpg
+images/site/avatar_metadata.jpg
+images/site/high-res-home.jpg
+images/site/icon-01.png
+images/site/icon-02.png
+images/site/icon-03.png
+images/site/icon-04.png
+images/site/low-res-home.jpg
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
 js/vendor/fastclick.js
 js/vendor/imagesloaded.pkgd.min.js
 js/vendor/jarallax-video.min.js
@@ -22,21 +37,6 @@ js/vendor/jquery.validate.min.js
 js/vendor/modernizr.min.js
 js/vendor/socialstream.jquery.js
 js/vendor/typist.js
-images/bckg/loading-light.gif
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
-images/site/avatar.jpg
-images/site/avatar_metadata.jpg
-images/site/high-res-home.jpg
-images/site/icon-01.png
-images/site/icon-02.png
-images/site/icon-03.png
-images/site/icon-04.png
-images/site/low-res-home.jpg
-images/ico/apple-touch-icon.png
-images/ico/favicon.ico
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
 js/vendor/jquery.magnific-popup/magnific-popup.css
@@ -45,12 +45,12 @@ js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -65,4 +65,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: aa9b216d580b81f81a979fb620b30fcd9f464890adbab6694f7b2e689c9e675f
+# hash: 44ad41d75a44b2d62ba03742dfc7d3d872d842334a78778b37c5fa4a94208fd1
