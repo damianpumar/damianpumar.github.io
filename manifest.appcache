@@ -3,7 +3,6 @@ CACHE MANIFEST
 CACHE:
 index.html
 css/768.css
-css/align.css
 css/animations.css
 css/bootstrap.min.css
 css/main.css
@@ -37,11 +36,11 @@ js/vendor/jquery.validate.min.js
 js/vendor/modernizr.min.js
 js/vendor/socialstream.jquery.js
 js/vendor/typist.js
+js/vendor/jquery.uniform/jquery.uniform.min.js
+js/vendor/jquery.uniform/uniform.default.css
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
 js/vendor/jquery.magnific-popup/magnific-popup.css
-js/vendor/jquery.uniform/jquery.uniform.min.js
-js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
@@ -65,4 +64,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 44ad41d75a44b2d62ba03742dfc7d3d872d842334a78778b37c5fa4a94208fd1
+# hash: bf55cc4511360a463043de552b8eb257b24e6fd6f9ffd4a2f55eb21d123d85c1
