@@ -36,11 +36,11 @@ js/vendor/jquery.validate.min.js
 js/vendor/modernizr.min.js
 js/vendor/socialstream.jquery.js
 js/vendor/typist.js
-js/vendor/jquery.uniform/jquery.uniform.min.js
-js/vendor/jquery.uniform/uniform.default.css
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
 js/vendor/jquery.magnific-popup/magnific-popup.css
+js/vendor/jquery.uniform/jquery.uniform.min.js
+js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
@@ -64,4 +64,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: bf55cc4511360a463043de552b8eb257b24e6fd6f9ffd4a2f55eb21d123d85c1
+# hash: 4e7158b0cafbb3bdaae89aa248832decd3cf75dae844b7753216ec0468dbbce2
