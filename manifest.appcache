@@ -6,6 +6,7 @@ awesomeserializer-lib.html
 fastlist.html
 i18njs-lib.html
 index.html
+kubernete-website-collaboration.html
 moq-collaboration.html
 spectacle-collaboration.html
 xamarinplugin-lib.html
@@ -33,6 +34,8 @@ images/portfolio/06-01.png
 images/portfolio/06.png
 images/portfolio/08-01.png
 images/portfolio/08.png
+images/portfolio/09-01.png
+images/portfolio/09.png
 images/site/avatar.jpg
 images/site/avatar_metadata.jpg
 images/site/high-res-home.jpg
@@ -59,11 +62,11 @@ js/vendor/jquery.validate.min.js
 js/vendor/modernizr.min.js
 js/vendor/socialstream.jquery.js
 js/vendor/typist.js
+js/vendor/jquery.uniform/jquery.uniform.min.js
+js/vendor/jquery.uniform/uniform.default.css
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
 js/vendor/jquery.magnific-popup/magnific-popup.css
-js/vendor/jquery.uniform/jquery.uniform.min.js
-js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
@@ -87,4 +90,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 145d3ec737e9c216d9bda988bb87f95b43735528d6d59cbf646808e28294c7c6
+# hash: ef07d68594a35a1b310d0128e74fb0b6a0e6bda61f2636ab5814032410b5bc94
