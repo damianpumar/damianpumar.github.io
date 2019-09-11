@@ -18,6 +18,14 @@ js/main.js
 images/bckg/loading-light.gif
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
+images/site/avatar.jpg
+images/site/avatar_metadata.jpg
+images/site/high-res-home.jpg
+images/site/icon-01.png
+images/site/icon-02.png
+images/site/icon-03.png
+images/site/icon-04.png
+images/site/low-res-home.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -36,14 +44,6 @@ images/portfolio/08-01.png
 images/portfolio/08.png
 images/portfolio/09-01.png
 images/portfolio/09.png
-images/site/avatar.jpg
-images/site/avatar_metadata.jpg
-images/site/high-res-home.jpg
-images/site/icon-01.png
-images/site/icon-02.png
-images/site/icon-03.png
-images/site/icon-04.png
-images/site/low-res-home.jpg
 images/testimonials/1.jpg
 images/testimonials/2.jpg
 images/testimonials/3.jpg
@@ -62,25 +62,25 @@ js/vendor/jquery.validate.min.js
 js/vendor/modernizr.min.js
 js/vendor/socialstream.jquery.js
 js/vendor/typist.js
+js/vendor/jquery.uniform/jquery.uniform.min.js
+js/vendor/jquery.uniform/uniform.default.css
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
 js/vendor/jquery.magnific-popup/magnific-popup.css
-js/vendor/jquery.uniform/jquery.uniform.min.js
-js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
-css/fonts/fontello/css/fontello.css
-css/fonts/fontello/font/fontellofa26.eot
-css/fonts/fontello/font/fontellofa26.svg
-css/fonts/fontello/font/fontellofa26.ttf
-css/fonts/fontello/font/fontellofa26.woff
-css/fonts/fontello/font/fontellofa26.woff2
 css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.woff
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroked41d.eot
+css/fonts/fontello/css/fontello.css
+css/fonts/fontello/font/fontellofa26.eot
+css/fonts/fontello/font/fontellofa26.svg
+css/fonts/fontello/font/fontellofa26.ttf
+css/fonts/fontello/font/fontellofa26.woff
+css/fonts/fontello/font/fontellofa26.woff2
 
 NETWORK:
 http://*
@@ -90,4 +90,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 1920cece72f1ab0b0cc7c4aa22e48d0b2bdbfb05317d51ca8563a7578eac5bb5
+# hash: f7250f23285317ec22006d75020125186de1b18b22787e3cd262b09d1daf5e2d
