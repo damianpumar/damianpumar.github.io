@@ -19,6 +19,18 @@ js/main.js
 images/bckg/loading-light.gif
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
+images/site/avatar.jpg
+images/site/avatar_metadata.jpg
+images/site/high-res-home.jpg
+images/site/icon-01.png
+images/site/icon-02.png
+images/site/icon-03.png
+images/site/icon-04.png
+images/site/low-res-home.jpg
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -39,18 +51,6 @@ images/portfolio/09-01.png
 images/portfolio/09.png
 images/portfolio/10-01.png
 images/portfolio/10.png
-images/site/avatar.jpg
-images/site/avatar_metadata.jpg
-images/site/high-res-home.jpg
-images/site/icon-01.png
-images/site/icon-02.png
-images/site/icon-03.png
-images/site/icon-04.png
-images/site/low-res-home.jpg
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
 js/vendor/fastclick.js
 js/vendor/imagesloaded.pkgd.min.js
 js/vendor/jarallax-video.min.js
@@ -65,20 +65,20 @@ js/vendor/jquery.validate.min.js
 js/vendor/modernizr.min.js
 js/vendor/socialstream.jquery.js
 js/vendor/typist.js
-js/vendor/jquery.uniform/jquery.uniform.min.js
-js/vendor/jquery.uniform/uniform.default.css
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
 js/vendor/jquery.magnific-popup/magnific-popup.css
+js/vendor/jquery.uniform/jquery.uniform.min.js
+js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -93,4 +93,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 87840c8d13e993c3f6c30c6f9df5905ea5c2fceb56364ef9a0afbd976ab15625
+# hash: b60e8b77456ce2b45348da18e5cf959027eba8947491dbc418662c1da618d450
