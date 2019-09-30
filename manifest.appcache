@@ -16,23 +16,9 @@ css/animations.css
 css/bootstrap.min.css
 css/main.css
 js/main.js
-images/bckg/loading-light.gif
-js/vendor/fastclick.js
-js/vendor/imagesloaded.pkgd.min.js
-js/vendor/jarallax-video.min.js
-js/vendor/jarallax.min.js
-js/vendor/jquery-1.12.1.min.js
-js/vendor/jquery-migrate-1.2.1.min.js
-js/vendor/jquery.address-1.5.min.js
-js/vendor/jquery.cookie.js
-js/vendor/jquery.fitvids.js
-js/vendor/jquery.isotope.min.js
-js/vendor/jquery.validate.min.js
-js/vendor/modernizr.min.js
-js/vendor/socialstream.jquery.js
-js/vendor/typist.js
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
+images/bckg/loading-light.gif
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -66,6 +52,20 @@ images/testimonials/2.jpg
 images/testimonials/3.jpg
 images/testimonials/4.jpg
 images/testimonials/5.jpg
+js/vendor/fastclick.js
+js/vendor/imagesloaded.pkgd.min.js
+js/vendor/jarallax-video.min.js
+js/vendor/jarallax.min.js
+js/vendor/jquery-1.12.1.min.js
+js/vendor/jquery-migrate-1.2.1.min.js
+js/vendor/jquery.address-1.5.min.js
+js/vendor/jquery.cookie.js
+js/vendor/jquery.fitvids.js
+js/vendor/jquery.isotope.min.js
+js/vendor/jquery.validate.min.js
+js/vendor/modernizr.min.js
+js/vendor/socialstream.jquery.js
+js/vendor/typist.js
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
 js/vendor/jquery.magnific-popup/magnific-popup.css
@@ -73,18 +73,18 @@ js/vendor/jquery.uniform/jquery.uniform.min.js
 js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/css/fontello.css
-css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
-css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
-css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
-css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.woff
-css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroked41d.eot
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
+css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
+css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
+css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
+css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.woff
+css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroked41d.eot
 
 NETWORK:
 http://*
@@ -94,4 +94,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 2453205960f370becf5ff7616073c67d0661f221b82988717d7fe1fd42665845
+# hash: 0b9320bb0ab0734fdf359f7cbc976db91156dcb6ca6a53cf47657103b3be7052
