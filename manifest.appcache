@@ -16,9 +16,9 @@ css/animations.css
 css/bootstrap.min.css
 css/main.css
 js/main.js
+images/bckg/loading-light.gif
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
-images/bckg/loading-light.gif
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -94,4 +94,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 0b9320bb0ab0734fdf359f7cbc976db91156dcb6ca6a53cf47657103b3be7052
+# hash: 4b82264a2fe423b816af5bb1af363fe4e8661cf849447bd79d5399f191cdf33b
