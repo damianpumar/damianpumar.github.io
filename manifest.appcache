@@ -59,7 +59,6 @@ js/vendor/jarallax.min.js
 js/vendor/jquery-1.12.1.min.js
 js/vendor/jquery-migrate-1.2.1.min.js
 js/vendor/jquery.address-1.5.min.js
-js/vendor/jquery.cookie.js
 js/vendor/jquery.fitvids.js
 js/vendor/jquery.isotope.min.js
 js/vendor/jquery.validate.min.js
@@ -94,4 +93,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 40497433060ea440d637bc1274c591d8a21f347d4012cde2e226a79e2a4bedb8
+# hash: 8128ab972a4f6f3336b9562aa5576972cef24e35092b78a26c8ac1a88462f9dc
