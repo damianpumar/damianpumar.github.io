@@ -1,24 +1,24 @@
 CACHE MANIFEST
 
 CACHE:
-20dejunio.html
-awesomeserializer-lib.html
-fastlist.html
-i18njs-lib.html
 index.html
-kubernete-website-collaboration.html
-moq-collaboration.html
-spectacle-collaboration.html
-svelte-collaboration.html
-xamarinplugin-lib.html
 css/768.css
 css/animations.css
 css/bootstrap.min.css
 css/main.css
 js/main.js
+portfolio/20dejunio.html
+portfolio/awesomeserializer-lib.html
+portfolio/fastlist.html
+portfolio/i18njs-lib.html
+portfolio/kubernete-website-collaboration.html
+portfolio/moq-collaboration.html
+portfolio/spectacle-collaboration.html
+portfolio/svelte-collaboration.html
+portfolio/xamarinplugin-lib.html
+images/bckg/loading-light.gif
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
-images/bckg/loading-light.gif
 images/site/avatar.jpg
 images/site/avatar_metadata.jpg
 images/site/high-res-home.jpg
@@ -27,6 +27,11 @@ images/site/icon-02.png
 images/site/icon-03.png
 images/site/icon-04.png
 images/site/low-res-home.jpg
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
+images/testimonials/5.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -47,11 +52,6 @@ images/portfolio/09-01.png
 images/portfolio/09.png
 images/portfolio/10-01.png
 images/portfolio/10.png
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
-images/testimonials/5.jpg
 js/vendor/fastclick.js
 js/vendor/imagesloaded.pkgd.min.js
 js/vendor/jarallax-video.min.js
@@ -73,12 +73,12 @@ js/vendor/nprogress/nprogress.js
 js/vendor/jquery.uniform/jquery.uniform.min.js
 js/vendor/jquery.uniform/uniform.default.css
 css/fonts/fontello/css/fontello.css
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -93,4 +93,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 448c41d7b84ab82d6187c370a3b3b7613a0ebc33e6c6e23c57a5abf922da0f76
+# hash: 216831aa6f71779f471506db6924c986517247c6e5a74aeef4763ac703e67c13
