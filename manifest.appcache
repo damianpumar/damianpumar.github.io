@@ -53,12 +53,14 @@ images/portfolio/09.png
 images/portfolio/10-01.png
 images/portfolio/10.png
 js/vendor/fastclick.js
+js/vendor/html2pdf.bundle.js
 js/vendor/imagesloaded.pkgd.min.js
 js/vendor/jarallax-video.min.js
 js/vendor/jarallax.min.js
 js/vendor/jquery-1.12.1.min.js
 js/vendor/jquery-migrate-1.2.1.min.js
 js/vendor/jquery.address-1.5.min.js
+js/vendor/jquery.blockUI.min.js
 js/vendor/jquery.fitvids.js
 js/vendor/jquery.isotope.min.js
 js/vendor/jquery.validate.min.js
@@ -93,4 +95,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 2792635f6d193f96a0bdc5f4e955740c818c04787a767e47b7bf729a1790fd4c
+# hash: 32cd62ffdd5865b22b8052e75c155ddadc0b2fbde016bd1156bc6deb6f76a8da
