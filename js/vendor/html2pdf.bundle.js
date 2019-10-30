@@ -1800,7 +1800,6 @@ var CanvasRenderer = function () {
             this.ctx.scale(this.options.scale, this.options.scale);
             this.ctx.translate(-options.x, -options.y);
             this.ctx.textBaseline = 'bottom';
-            options.logger.log('Canvas renderer initialized (' + options.width + 'x' + options.height + ' at ' + options.x + ',' + options.y + ') with scale ' + this.options.scale);
         }
     }, {
         key: 'clip',
@@ -3829,7 +3828,6 @@ var ForeignObjectRenderer = function () {
             this.canvas.style.width = options.width + 'px';
             this.canvas.style.height = options.height + 'px';
 
-            options.logger.log('ForeignObject renderer initialized (' + options.width + 'x' + options.height + ' at ' + options.x + ',' + options.y + ') with scale ' + options.scale);
             var svg = createForeignObjectSVG(Math.max(options.windowWidth, options.width) * options.scale, Math.max(options.windowHeight, options.height) * options.scale, options.scrollX * options.scale, options.scrollY * options.scale, this.element);
 
             return loadSerializedSVG(svg).then(function (img) {
@@ -8759,11 +8757,20 @@ Worker.prototype.toPdf = function toPdf() {
     // Initialize the PDF.
     this.prop.pdf = this.prop.pdf || new jspdf_min(opt.jsPDF);
 
-    for (var page = 0; page < nPages; page++) {
-      // Trim the final page to reduce file size.
-      if (page === nPages - 1) {
-        pageCanvas.height = pxFullHeight % pxPageHeight;
-        pageHeight = pageCanvas.height * this.prop.pageSize.inner.width / pageCanvas.width;
+    for (var page = 0; page <= nPages; page++) {
+       if(page === nPages) {
+        let remainingEmptySpace = (pxPageHeight * page) - pxFullHeight;
+        
+        if(remainingEmptySpace > 0) {
+          if(this.opt.backgroundColor) {
+            let color = this.opt.backgroundColor.replace(/^(rgb|rgba)\(/,'').replace(/\)$/,'').replace(/\s/g,'').split(',');
+
+            this.prop.pdf.setFillColor(parseInt(color[0]), parseInt(color[1]), parseInt(color[2]));
+            this.prop.pdf.rect(0, remainingEmptySpace / 95, pageCanvas.width, pageCanvas.height, "F");
+          }
+        }
+
+        return;
       }
 
       // Display the page.

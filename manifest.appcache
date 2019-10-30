@@ -19,19 +19,6 @@ portfolio/xamarinplugin-lib.html
 images/bckg/loading-light.gif
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
-images/site/avatar.jpg
-images/site/avatar_metadata.jpg
-images/site/high-res-home.jpg
-images/site/icon-01.png
-images/site/icon-02.png
-images/site/icon-03.png
-images/site/icon-04.png
-images/site/low-res-home.jpg
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
-images/testimonials/5.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -52,6 +39,19 @@ images/portfolio/09-01.png
 images/portfolio/09.png
 images/portfolio/10-01.png
 images/portfolio/10.png
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
+images/testimonials/5.jpg
+images/site/avatar.jpg
+images/site/avatar_metadata.jpg
+images/site/high-res-home.jpg
+images/site/icon-01.png
+images/site/icon-02.png
+images/site/icon-03.png
+images/site/icon-04.png
+images/site/low-res-home.jpg
 js/vendor/fastclick.js
 js/vendor/html2pdf.bundle.js
 js/vendor/imagesloaded.pkgd.min.js
@@ -75,12 +75,12 @@ js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -95,4 +95,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 32cd62ffdd5865b22b8052e75c155ddadc0b2fbde016bd1156bc6deb6f76a8da
+# hash: 8be13068d5276397dea1ea9416954f0fd6fac9c1d64e402ed9ca04ff7e585a7e
