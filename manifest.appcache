@@ -5,6 +5,7 @@ index.html
 css/768.css
 css/animations.css
 css/bootstrap.min.css
+css/jquery.modal.min.css
 css/main.css
 js/main.js
 portfolio/20dejunio.html
@@ -21,6 +22,19 @@ images/flags/ar.png
 images/flags/it.png
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
+images/site/avatar.jpg
+images/site/avatar_metadata.jpg
+images/site/high-res-home.jpg
+images/site/icon-01.png
+images/site/icon-02.png
+images/site/icon-03.png
+images/site/icon-04.png
+images/site/low-res-home.jpg
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
+images/testimonials/5.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -41,19 +55,6 @@ images/portfolio/09-01.png
 images/portfolio/09.png
 images/portfolio/10-01.png
 images/portfolio/10.png
-images/site/avatar.jpg
-images/site/avatar_metadata.jpg
-images/site/high-res-home.jpg
-images/site/icon-01.png
-images/site/icon-02.png
-images/site/icon-03.png
-images/site/icon-04.png
-images/site/low-res-home.jpg
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
-images/testimonials/5.jpg
 js/vendor/fastclick.js
 js/vendor/html2pdf.bundle.min.js
 js/vendor/imagesloaded.pkgd.min.js
@@ -65,9 +66,9 @@ js/vendor/jquery.address-1.5.min.js
 js/vendor/jquery.blockUI.min.js
 js/vendor/jquery.fitvids.js
 js/vendor/jquery.isotope.min.js
+js/vendor/jquery.modal.min.js
 js/vendor/jquery.validate.min.js
 js/vendor/modernizr.min.js
-js/vendor/socialstream.jquery.js
 js/vendor/typist.js
 js/vendor/jquery.magnific-popup/default-skin.svg
 js/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js
@@ -97,4 +98,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 419a3987738335ca73f8d805a15a500aca66e4931fb2c15152b8151bb41880fa
+# hash: efe10026d62f31284923318a73e5fc5dddc328e9e6dfeeab556c806b102f5bad
