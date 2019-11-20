@@ -22,6 +22,11 @@ images/flags/ar.png
 images/flags/it.png
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
+images/testimonials/5.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -50,11 +55,6 @@ images/site/icon-02.png
 images/site/icon-03.png
 images/site/icon-04.png
 images/site/low-res-home.jpg
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
-images/testimonials/5.jpg
 js/vendor/fastclick.js
 js/vendor/html2pdf.bundle.min.js
 js/vendor/imagesloaded.pkgd.min.js
@@ -78,12 +78,12 @@ js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -98,4 +98,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: b872229a54f4691535ccc3edfb700570a65a72650797c9e1b835a076da43bb5f
+# hash: 6b39ee1230400472617113e5a46a1c0ed0b2b3c36357bfd8603c614675964e73
