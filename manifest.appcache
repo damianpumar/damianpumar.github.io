@@ -7,7 +7,6 @@ css/animations.css
 css/bootstrap.min.css
 css/jquery.modal.min.css
 css/main.css
-js/main.js
 portfolio/20dejunio.html
 portfolio/awesomeserializer-lib.html
 portfolio/fastlist.html
@@ -17,16 +16,12 @@ portfolio/moq-collaboration.html
 portfolio/spectacle-collaboration.html
 portfolio/svelte-collaboration.html
 portfolio/xamarinplugin-lib.html
+js/main.js
 images/bckg/loading-light.gif
 images/flags/ar.png
 images/flags/it.png
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
-images/testimonials/5.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -55,6 +50,11 @@ images/site/icon-02.png
 images/site/icon-03.png
 images/site/icon-04.png
 images/site/low-res-home.jpg
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
+images/testimonials/5.jpg
 js/vendor/fastclick.js
 js/vendor/html2pdf.bundle.min.js
 js/vendor/imagesloaded.pkgd.min.js
@@ -98,4 +98,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 6b39ee1230400472617113e5a46a1c0ed0b2b3c36357bfd8603c614675964e73
+# hash: 401a6331855defe85804a5f788be2c372ace63f4443921fa0d9a3bdf8da0dd30
