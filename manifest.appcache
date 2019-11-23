@@ -7,6 +7,7 @@ css/animations.css
 css/bootstrap.min.css
 css/jquery.modal.min.css
 css/main.css
+js/main.js
 portfolio/20dejunio.html
 portfolio/awesomeserializer-lib.html
 portfolio/fastlist.html
@@ -16,7 +17,6 @@ portfolio/moq-collaboration.html
 portfolio/spectacle-collaboration.html
 portfolio/svelte-collaboration.html
 portfolio/xamarinplugin-lib.html
-js/main.js
 images/bckg/loading-light.gif
 images/flags/ar.png
 images/flags/it.png
@@ -98,4 +98,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 401a6331855defe85804a5f788be2c372ace63f4443921fa0d9a3bdf8da0dd30
+# hash: ec3e8d62c6a0485a69fd4a6523d46dfa1ed1558594be3c68e00219fa3ca02858
