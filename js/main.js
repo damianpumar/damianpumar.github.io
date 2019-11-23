@@ -1,6 +1,1234 @@
 /*!
  * FullCoders v.6.10.2019+ (https://www.fullcoders.com)
  * Copyright 2019 FullCoders
- * Licensed under MIT (https://github.com/damianpumar/MyResume)
+ * Licensed under  ()
  */
-"use strict";var inClass,outClass,portfolioKeyword,portfolioActive,loader={initialize:function(){loader.show(),$(window).load(function(){loader.hide()})},show:function(){NProgress.start()},hide:function(){NProgress.done()}},maginNumber=315576e5,utilities={loadImagesAsync:function(){var e=document.getElementsByClassName("asyncImage");Array.from(e).map(function(t){var e=new Image;function a(e){return"IMG"===t.nodeName?t.src=e:t.style.backgroundImage="url("+e+")"}t.dataset.lowSrc&&a(t.dataset.lowSrc),e.src=t.dataset.src,e.onload=function(){return t.classList.remove("asyncImage"),a(t.dataset.src)}})},initializeHoursWorked:function(){$(window).load(function(){var e=new Date(2011,1,1,0,0),t=new Date,a=(t.getTime()-e.getTime())/864e5*24/2.1-2319*(t.getYear()-e.getYear()),o=Math.trunc(a).toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");$("#hoursWorked").text(o+" Working Hours")})},initializeAge:function(){$(window).load(function(){var e=Date.parse("1991/11/06"),t=~~((Date.now()-e)/maginNumber);$("#age").text(t+" years old")})},initializeFillBars:function(){var t=!1;window.addEventListener("pageChanged",function(e){!t&&e&&"resume"==e.detail&&($(".bar").each(function(){var e=$(this),t=e.attr("data-percent"),a=e.attr("data-message"),o=void 0!==a;e.find(".progress").css("width",t+"%"),o?e.find(".progress").html('<span style="width: auto; border-radius: 20%;"> '+a+" </span>"):e.find(".progress").html("<span> "+t+" </span>")}),t=!0)})},initializeStamp:function(){$(window).load(function(){console.clear(),utilities.printStamp()})},printStamp:function(){if(!window.location.href.includes("portfolio/")){var e=$("#contact .fun-fact h4")[0].innerHTML,t=$(".event p")[1].innerHTML.trim(),a=utilities.getOtherServer();console.log("Sorry, I cleared console because I wanted show you this message below"),console.log("【\ufeffＤａｍｉáｎ Ｐｕｍａｒ】"),console.log("I live in "+e),console.log(t),console.log("Code: https://github.com/damianpumar/myresume"),console.log("Other server: "+a),utilities.printSocialLinks()}},printSocialLinks:function(){var t=[];$(".social a").each(function(){var e=$(this).attr("href");e.includes("http")&&t.push(e)}),t.filter(function(e,t,a){return a.indexOf(e)===t}).forEach(function(e){console.log("• "+e)})},getOtherServer:function(){return window.location.href.includes("github")?"https://damianpumar.com":"https://damianpumar.github.io"},loadDownloadeableResume:function(){var o=$(".only-for-cv-paper");o.hide(),$("#download-resume").click(function(){var e=$("#resume").css("background-color"),t=$("#cv");t.css("background-color",e);var a={filename:"Damián Pumar - Resume",image:{type:"jpeg",quality:.98},jsPDF:{unit:"pt",format:"a3",orientation:"portrait"},backgroundColor:e,pagebreak:{mode:["ccs","legacy"]}};$.blockUI({message:"<h5>Creating CV...</h5>"}),o.show(),html2pdf().set(a).from(t[0]).save().then(function(){o.hide(),$.unblockUI()})})}},masonry={initialize:function(){$(window).on("resize debouncedresize",function(){masonry.refresh()}),masonry.setup()},setup:function(){var e=$(".masonry, .gallery");e.length&&e.each(function(e,t){if(masonry.refresh(),$(t).imagesLoaded(function(){$(t).isotope({layoutMode:$(t).data("layout")?$(t).data("layout"):"masonry"}),masonry.refresh()}),!$(t).data("isotope")){var a=$(t).siblings(".filters");a.length&&a.find("a").on("click",function(){var e=$(this).attr("data-filter");return $(t).isotope({filter:e}),$(this).parent().addClass("current").siblings().removeClass("current"),!1})}})},refresh:function(){var e=$(".masonry");e.length&&e.each(function(e,t){if($(t).data("isotope")){var a=$(t).data("item-width"),s=$(t).width(),o=$(t).children(".hentry"),i=Math.round(s/a);o.each(function(e,t){var a=$(this).hasClass("x2")&&1<i?2:1,o=100*Math.floor(s/i)/s*a;$(this).css("width",o+"%")});var n=Math.floor(s/i);$(t).isotope("option",{masonry:{columnWidth:n}}),$(t).isotope("layout")}})}},lightbox={setup:function(){$(".lightbox, .gallery").length&&$(".media-box, .gallery").each(function(e,t){$(this).magnificPopup({delegate:".lightbox, .gallery-item a",type:"image",image:{markup:'<div class="mfp-figure"><div class="mfp-close"></div><div class="mfp-img"></div></div><div class="mfp-bottom-bar"><div class="mfp-title"></div><div class="mfp-counter"></div></div>',cursor:"mfp-zoom-out-cur",verticalFit:!0,tError:'<a href="%url%">The image</a> could not be loaded.'},gallery:{enabled:!0,tCounter:'<span class="mfp-counter">%curr% / %total%</span>'},iframe:{markup:'<div class="mfp-iframe-scaler"><div class="mfp-close"></div><iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe><div class="mfp-title">Some caption</div></div>'},mainClass:"mfp-zoom-in",tLoading:"",removalDelay:300,callbacks:{markupParse:function(e,t,a){var o="";o=a.el.parents(".gallery-item").length?a.el.parents(".gallery-item").find(".gallery-caption").text():null==a.el.attr("title")?"":a.el.attr("title"),t.title=o},imageLoadComplete:function(){var e=this;setTimeout(function(){e.wrap.addClass("mfp-image-loaded")},16)},close:function(){this.wrap.removeClass("mfp-image-loaded")},beforeAppend:function(){var e=this;this.content.find("iframe").on("load",function(){setTimeout(function(){e.wrap.addClass("mfp-image-loaded")},16)})}},closeBtnInside:!1,closeOnContentClick:!0,midClick:!0})})}},current=0,classicLayout=!1;window.nextAnimation=$("html").data("next-animation"),window.prevAnimation=$("html").data("prev-animation"),window.randomize=$("html").data("random-animation"),window.isAnimating=!1;var $main=$("#main"),$pages=$main.children(".pt-page"),$menuLinks=$(".nav-menu a"),animcursor=1,endCurrPage=!1,endNextPage=!1,animEndEventNames={WebkitAnimation:"webkitAnimationEnd",OAnimation:"oAnimationEnd",msAnimation:"MSAnimationEnd",animation:"animationend"},animEndEventName=animEndEventNames[Modernizr.prefixed("animation")],support=Modernizr.cssanimations,page={initialize:function(){if(window.nextPage=function(e){return new page.nextPage(e)},$("html").hasClass("one-page-layout")){portfolioKeyword=$("section.portfolio").attr("id");var a=page.giveDetailUrl();(classicLayout=(classicLayout=(classicLayout="true"===$("html").attr("data-classic-layout"))||"true"===$("html").attr("data-mobile-classic-layout")&&$(window).width()<1025)||!Modernizr.cssanimations)?($("html").addClass("classic-layout"),page.setActivePage()):$("html").addClass("modern-layout"),$.address.change(function(){page.setActivePage(),$("html").removeClass("is-menu-toggled-on")}),$(".nav-menu a").on("click",function(){if(window.isAnimating)return!1}),$.address.change(function(){var e=page.giveDetailUrl();-1!=e?page.showProjectDetails(e):-1!=$.address.path().indexOf("/"+portfolioKeyword)&&page.hideProjectDetails(!0,!1)})}$(".one-page-layout a.ajax").live("click",function(){var e=$(this).attr("href"),t=$.address.baseURL();return-1!==e.indexOf(t)?(a=e.slice(t.length+1),$.address.path("/"+a)):$.address.path(portfolioKeyword+"/"+e.replace(".html","")),!1})},showProjectDetails:function(e){loader.show(),e.includes(".html")||(e+=".html");var t=$(".p-overlay:not(.active)").first();portfolioActive=$(".p-overlay.active"),t.empty().load("/portfolio/"+e+" .portfolio-single",function(){NProgress.set(.5),t.imagesLoaded(function(){masonry.setup(),portfolioActive.length&&page.hideProjectDetails(),loader.hide(),$("html").addClass("p-overlay-on"),$("body").scrollTop(0),page.setup(),classicLayout?t.show():t.removeClass("animate-in animate-out").addClass("animate-in").show(),t.addClass("active")}),$(".back").each(function(e,t){$(t).attr("href",window.location.origin+"#portfolio")})})},setup:function(){masonry.setup(),lightbox.setup(),$(".tabs").each(function(){$(this).find(".tab-titles li a.active").length?$(this).find(".tab-content > div").eq($(this).find(".tab-titles li a.active").parent().index()).show():($(this).find(".tab-titles li:first-child a").addClass("active"),$(this).find(".tab-content > div:first-child").show())}),$(".tabs .tab-titles li a").on("click",function(){if(!$(this).hasClass("active"))return $(this).parent().siblings().find("a").removeClass("active"),$(this).addClass("active"),$(this).parents(".tabs").find(".tab-content > div").hide().eq($(this).parent().index()).show(),!1});$(".toggle h4.active + .toggle-content").show(),$(".toggle h4").on("click",function(){return $(this).hasClass("active")?($(this).removeClass("active"),$(this).next(".toggle-content").stop(!0,!0).slideUp(300)):($(this).addClass("active"),$(this).next(".toggle-content").stop(!0,!0).slideDown(300),$(this).parents(".toggle-group").hasClass("accordion")&&($(this).parent().siblings().find("h4").removeClass("active"),$(this).parent().siblings().find(".toggle-content").stop(!0,!0).slideUp(300))),!1}),$("iframe,video").length&&$("html").fitVids(),$("select:not([multiple]), input:checkbox, input:radio, input:file").uniform(),-1<navigator.userAgent.toLowerCase().indexOf("android")&&$("html").addClass("android")},hideProjectDetails:function(e,t){$("body").scrollTop(0),e&&(portfolioActive=$(".p-overlay.active"),$("html").removeClass("p-overlay-on"),t||$.address.path(portfolioKeyword)),portfolioActive.removeClass("active"),classicLayout?portfolioActive.hide().empty():(portfolioActive.removeClass("animate-in animate-out").addClass("animate-out").removeClass("active").fadeOut().empty(),$("html").removeClass("p-overlay-on"))},giveDetailUrl:function(){var e,t=$.address.value();if(-1!=t.indexOf("/"+portfolioKeyword+"/")&&t.length>portfolioKeyword.length+2){var a=t.length;e=t.slice(portfolioKeyword.length+2,a)}else e=-1;return e},setActivePage:function(){var e=$.address.path();if(e=e.slice(1,e.length),""==(e=-1!=page.giveDetailUrl()?portfolioKeyword:e)){var t=$(".nav-menu li").first().find("a").attr("href");return e=t.slice(2,t.length),classicLayout?$("#"+e).addClass("page-current").siblings().removeClass("page-current"):$("#"+e).addClass("page-current"),page.setCurrentMenuItem(),!1}-1==page.giveDetailUrl()&&(classicLayout?($("#"+e).addClass("page-current").siblings().removeClass("page-current"),page.setCurrentMenuItem()):$(".page-current").length?page.nextPage($("#"+e).index()):($("#"+e).addClass("page-current"),current=$("#"+e).index(),page.setCurrentMenuItem()))},nextPage:function(e){if(e!==current){var t=current<e?nextAnimation:prevAnimation;if(randomize&&(67<animcursor&&(animcursor=1),t=animcursor,++animcursor),window.isAnimating)return!1;window.isAnimating=!0;var a=$pages.eq(current);current=e;var o=$pages.eq(current).addClass("page-current");switch(t){case 1:outClass="pt-page-moveToLeft",inClass="pt-page-moveFromRight";break;case 2:outClass="pt-page-moveToRight",inClass="pt-page-moveFromLeft";break;case 3:outClass="pt-page-moveToTop",inClass="pt-page-moveFromBottom";break;case 4:outClass="pt-page-moveToBottom",inClass="pt-page-moveFromTop";break;case 5:outClass="pt-page-fade",inClass="pt-page-moveFromRight pt-page-ontop";break;case 6:outClass="pt-page-fade",inClass="pt-page-moveFromLeft pt-page-ontop";break;case 7:outClass="pt-page-fade",inClass="pt-page-moveFromBottom pt-page-ontop";break;case 8:outClass="pt-page-fade",inClass="pt-page-moveFromTop pt-page-ontop";break;case 9:outClass="pt-page-moveToLeftFade",inClass="pt-page-moveFromRightFade";break;case 10:outClass="pt-page-moveToRightFade",inClass="pt-page-moveFromLeftFade";break;case 11:outClass="pt-page-moveToTopFade",inClass="pt-page-moveFromBottomFade";break;case 12:outClass="pt-page-moveToBottomFade",inClass="pt-page-moveFromTopFade";break;case 13:outClass="pt-page-moveToLeftEasing pt-page-ontop",inClass="pt-page-moveFromRight";break;case 14:outClass="pt-page-moveToRightEasing pt-page-ontop",inClass="pt-page-moveFromLeft";break;case 15:outClass="pt-page-moveToTopEasing pt-page-ontop",inClass="pt-page-moveFromBottom";break;case 16:outClass="pt-page-moveToBottomEasing pt-page-ontop",inClass="pt-page-moveFromTop";break;case 17:outClass="pt-page-scaleDown",inClass="pt-page-moveFromRight pt-page-ontop";break;case 18:outClass="pt-page-scaleDown",inClass="pt-page-moveFromLeft pt-page-ontop";break;case 19:outClass="pt-page-scaleDown",inClass="pt-page-moveFromBottom pt-page-ontop";break;case 20:outClass="pt-page-scaleDown",inClass="pt-page-moveFromTop pt-page-ontop";break;case 21:outClass="pt-page-scaleDown",inClass="pt-page-scaleUpDown pt-page-delay300";break;case 22:outClass="pt-page-scaleDownUp",inClass="pt-page-scaleUp pt-page-delay300";break;case 23:outClass="pt-page-moveToLeft pt-page-ontop",inClass="pt-page-scaleUp";break;case 24:outClass="pt-page-moveToRight pt-page-ontop",inClass="pt-page-scaleUp";break;case 25:outClass="pt-page-moveToTop pt-page-ontop",inClass="pt-page-scaleUp";break;case 26:outClass="pt-page-moveToBottom pt-page-ontop",inClass="pt-page-scaleUp";break;case 27:outClass="pt-page-scaleDownCenter",inClass="pt-page-scaleUpCenter pt-page-delay400";break;case 28:outClass="pt-page-rotateRightSideFirst",inClass="pt-page-moveFromRight pt-page-delay200 pt-page-ontop";break;case 29:outClass="pt-page-rotateLeftSideFirst",inClass="pt-page-moveFromLeft pt-page-delay200 pt-page-ontop";break;case 30:outClass="pt-page-rotateTopSideFirst",inClass="pt-page-moveFromTop pt-page-delay200 pt-page-ontop";break;case 31:outClass="pt-page-rotateBottomSideFirst",inClass="pt-page-moveFromBottom pt-page-delay200 pt-page-ontop";break;case 32:outClass="pt-page-flipOutRight",inClass="pt-page-flipInLeft pt-page-delay500";break;case 33:outClass="pt-page-flipOutLeft",inClass="pt-page-flipInRight pt-page-delay500";break;case 34:outClass="pt-page-flipOutTop",inClass="pt-page-flipInBottom pt-page-delay500";break;case 35:outClass="pt-page-flipOutBottom",inClass="pt-page-flipInTop pt-page-delay500";break;case 36:outClass="pt-page-rotateFall pt-page-ontop",inClass="pt-page-scaleUp";break;case 37:outClass="pt-page-rotateOutNewspaper",inClass="pt-page-rotateInNewspaper pt-page-delay500";break;case 38:outClass="pt-page-rotatePushLeft",inClass="pt-page-moveFromRight";break;case 39:outClass="pt-page-rotatePushRight",inClass="pt-page-moveFromLeft";break;case 40:outClass="pt-page-rotatePushTop",inClass="pt-page-moveFromBottom";break;case 41:outClass="pt-page-rotatePushBottom",inClass="pt-page-moveFromTop";break;case 42:outClass="pt-page-rotatePushLeft",inClass="pt-page-rotatePullRight pt-page-delay180";break;case 43:outClass="pt-page-rotatePushRight",inClass="pt-page-rotatePullLeft pt-page-delay180";break;case 44:outClass="pt-page-rotatePushTop",inClass="pt-page-rotatePullBottom pt-page-delay180";break;case 45:outClass="pt-page-rotatePushBottom",inClass="pt-page-rotatePullTop pt-page-delay180";break;case 46:outClass="pt-page-rotateFoldLeft",inClass="pt-page-moveFromRightFade";break;case 47:outClass="pt-page-rotateFoldRight",inClass="pt-page-moveFromLeftFade";break;case 48:outClass="pt-page-rotateFoldTop",inClass="pt-page-moveFromBottomFade";break;case 49:outClass="pt-page-rotateFoldBottom",inClass="pt-page-moveFromTopFade";break;case 50:outClass="pt-page-moveToRightFade",inClass="pt-page-rotateUnfoldLeft";break;case 51:outClass="pt-page-moveToLeftFade",inClass="pt-page-rotateUnfoldRight";break;case 52:outClass="pt-page-moveToBottomFade",inClass="pt-page-rotateUnfoldTop";break;case 53:outClass="pt-page-moveToTopFade",inClass="pt-page-rotateUnfoldBottom";break;case 54:outClass="pt-page-rotateRoomLeftOut pt-page-ontop",inClass="pt-page-rotateRoomLeftIn";break;case 55:outClass="pt-page-rotateRoomRightOut pt-page-ontop",inClass="pt-page-rotateRoomRightIn";break;case 56:outClass="pt-page-rotateRoomTopOut pt-page-ontop",inClass="pt-page-rotateRoomTopIn";break;case 57:outClass="pt-page-rotateRoomBottomOut pt-page-ontop",inClass="pt-page-rotateRoomBottomIn";break;case 58:outClass="pt-page-rotateCubeLeftOut pt-page-ontop",inClass="pt-page-rotateCubeLeftIn";break;case 59:outClass="pt-page-rotateCubeRightOut pt-page-ontop",inClass="pt-page-rotateCubeRightIn";break;case 60:outClass="pt-page-rotateCubeTopOut pt-page-ontop",inClass="pt-page-rotateCubeTopIn";break;case 61:outClass="pt-page-rotateCubeBottomOut pt-page-ontop",inClass="pt-page-rotateCubeBottomIn";break;case 62:outClass="pt-page-rotateCarouselLeftOut pt-page-ontop",inClass="pt-page-rotateCarouselLeftIn";break;case 63:outClass="pt-page-rotateCarouselRightOut pt-page-ontop",inClass="pt-page-rotateCarouselRightIn";break;case 64:outClass="pt-page-rotateCarouselTopOut pt-page-ontop",inClass="pt-page-rotateCarouselTopIn";break;case 65:outClass="pt-page-rotateCarouselBottomOut pt-page-ontop",inClass="pt-page-rotateCarouselBottomIn";break;case 66:outClass="pt-page-rotateSidesOut",inClass="pt-page-rotateSidesIn pt-page-delay200";break;case 67:outClass="pt-page-rotateSlideOut",inClass="pt-page-rotateSlideIn"}a.addClass(outClass).on(animEndEventName,function(){a.off(animEndEventName),endCurrPage=!0,endNextPage&&page.onEndAnimation(a,o)}),o.addClass(inClass).on(animEndEventName,function(){o.off(animEndEventName),endNextPage=!0,endCurrPage&&page.onEndAnimation(a,o)}),support||page.onEndAnimation(a,o)}},onEndAnimation:function(e,t){endNextPage=endCurrPage=!1,page.resetPage(e,t),window.isAnimating=!1,page.setCurrentMenuItem()},resetPage:function(e,t){e.removeClass(outClass),t.removeClass(inClass),$pages.eq(current).siblings().removeClass("page-current")},setCurrentMenuItem:function(){var e=$(".pt-page.page-current").attr("id");$(".nav-menu a[href$="+e+"]").parent().addClass("current_page_item").siblings().removeClass("current_page_item"),page.raisePageChanged()},raisePageChanged:function(){var e=$.address.path();e=e.slice(1,e.length);var t=new CustomEvent("pageChanged",{detail:e});window.dispatchEvent(t)}},typist={initialize:function(){$(window).load(function(){var e=document.querySelector("#typist-element");new Typist(e,{letterInterval:60,textInterval:3e3})})}},header={initialize:function(){$(".search-toggle").on("click",function(){$("html").toggleClass("is-search-toggled-on"),$(".search-box input").trigger("focus")}),$(".menu-toggle").on("click",function(){$("html").toggleClass("is-menu-toggled-on")});$(".toggle h4.active + .toggle-content").show(),$(".toggle h4").on("click",function(){return $(this).hasClass("active")?($(this).removeClass("active"),$(this).next(".toggle-content").stop(!0,!0).slideUp(300)):($(this).addClass("active"),$(this).next(".toggle-content").stop(!0,!0).slideDown(300),$(this).parents(".toggle-group").hasClass("accordion")&&($(this).parent().siblings().find("h4").removeClass("active"),$(this).parent().siblings().find(".toggle-content").stop(!0,!0).slideUp(300))),!1}),$("select:not([multiple]), input:checkbox, input:radio, input:file").uniform(),-1<navigator.userAgent.toLowerCase().indexOf("android")&&$("html").addClass("android")}},responsive={initialize:function(){FastClick.attach(document.body)}},form={applyValidators:function(){$("#contact-form").addClass("validate-form"),$("#contact-form").find("input,textarea").each(function(e,t){"true"===$(this).attr("aria-required")&&$(this).addClass("required"),"email"===$(this).attr("name")&&$(this).addClass("email")}),$(".validate-form").length&&$(".validate-form").each(function(){$(this).validate({ignore:".ignore",rules:{hiddenRecaptcha:{required:function(){return""==grecaptcha.getResponse()}}}})})}},email={initialize:function(){var a=$("#contact-form"),o=$(".site-alert"),s=a.find(".submit");a.submit(function(e){var t;e.preventDefault(),(t=a).valid()&&(NProgress.start(),s.addClass("active loading"),$.ajax({url:t.attr("action"),type:t.attr("method"),dataType:"JSON",crossDomain:!0,contentType:"application/json; charset=utf-8",data:JSON.stringify(t.serializeObject()),success:function(e){t.clearForm()},error:function(e,t){o.addClass("error")},complete:function(){NProgress.done(),o.show(),setTimeout(function(){o.hide()},6e3)}}))}),$.fn.serializeObject=function(){var e={},t=this.serializeArray();return $.each(t,function(){void 0!==e[this.name]?(e[this.name].push||(e[this.name]=[e[this.name]]),e[this.name].push(this.value||"")):e[this.name]=this.value||""}),e},$.fn.clearForm=function(){return grecaptcha.reset(),$(".contact-form #name").focus(),this.each(function(){var e=this.type,t=this.tagName.toLowerCase();if("form"==t)return $(":input",this).clearForm();"text"==e||"password"==e||"textarea"==t||"email"==e?this.value="":"checkbox"==e||"radio"==e?this.checked=!1:"select"==t&&(this.selectedIndex=-1)})}}},maps={intialize:function(){var n=$("#map-canvas");n.length&&google.maps.event.addDomListener(window,"load",function(){var e=n.data("latitude"),t=n.data("longitude"),a=new google.maps.LatLng(e,t),o={zoom:n.data("zoom"),disableDefaultUI:!0,center:a,styles:[{featureType:"administrative.locality",elementType:"all",stylers:[{hue:"#2c2e33"},{saturation:7},{lightness:19},{visibility:"on"}]},{featureType:"landscape",elementType:"all",stylers:[{hue:"#ffffff"},{saturation:-100},{lightness:100},{visibility:"simplified"}]},{featureType:"poi",elementType:"all",stylers:[{hue:"#ffffff"},{saturation:-100},{lightness:100},{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{hue:"#bbc0c4"},{saturation:-93},{lightness:31},{visibility:"simplified"}]},{featureType:"road",elementType:"labels",stylers:[{hue:"#bbc0c4"},{saturation:-93},{lightness:31},{visibility:"on"}]},{featureType:"road.arterial",elementType:"labels",stylers:[{hue:"#bbc0c4"},{saturation:-93},{lightness:-2},{visibility:"simplified"}]},{featureType:"road.local",elementType:"geometry",stylers:[{hue:"#e9ebed"},{saturation:-90},{lightness:-8},{visibility:"simplified"}]},{featureType:"transit",elementType:"all",stylers:[{hue:"#e9ebed"},{saturation:10},{lightness:69},{visibility:"on"}]},{featureType:"water",elementType:"all",stylers:[{hue:"#e9ebed"},{saturation:-78},{lightness:67},{visibility:"simplified"}]}]},s=document.getElementById("map-canvas"),i=new google.maps.Map(s,o);i.panBy(0,50),new google.maps.Marker({position:a,map:i})})}},snackBar={initialize:function(){$(window).load(function(){window.setTimeout(show,2e3)})}};function show(){if(!window.localStorage.getItem("_sbSW")){var e=$(".snackbar");e&&(e.fadeIn("slow"),window.setTimeout(function(){e.fadeOut()},6e3),hideWhenClicked(e))}}function hideWhenClicked(t){$(".snackbar").click(function(e){t.hide(),window.localStorage.setItem("_sbSW","true")})}var initializer={initialize:function(){utilities.loadImagesAsync(),loader.initialize(),maps.intialize(),utilities.initializeFillBars(),header.initialize(),responsive.initialize(),form.applyValidators(),email.initialize(),page.initialize(),snackBar.initialize(),typist.initialize(),utilities.initializeHoursWorked(),utilities.initializeAge(),utilities.initializeStamp(),utilities.loadDownloadeableResume(),masonry.initialize()}};jQuery,initializer.initialize();
+'use strict';
+
+var loader = {
+  initialize: function initialize() {
+    loader.show();
+
+    $(window).load(function () {
+      loader.hide();
+    });
+  },
+
+  show: function show() {
+    NProgress.start();
+  },
+
+  hide: function hide() {
+    NProgress.done();
+  }
+};
+
+// The magic number: 31557600000 is 24 * 3600 * 365.25 * 1000
+// Which is the length of a year, the length of a year is 365 days and 6 hours
+// which is 0.25 day.
+var maginNumber = 31557600000;
+
+var utilities = {
+  loadImagesAsync: function loadImagesAsync() {
+
+    var objects = document.getElementsByClassName("asyncImage");
+
+    Array.from(objects).map(function (item) {
+      var img = new Image();
+
+      function applySrc(src) {
+        return item.nodeName === "IMG" ? item.src = src : item.style.backgroundImage = "url(" + src + ")";
+      }
+
+      if (item.dataset.lowSrc) {
+        applySrc(item.dataset.lowSrc);
+      }
+
+      img.src = item.dataset.src;
+
+      img.onload = function () {
+        item.classList.remove("asyncImage");
+        return applySrc(item.dataset.src);
+      };
+    });
+  },
+
+  initializeHoursWorked: function initializeHoursWorked() {
+    $(window).load(function () {
+      var startWork = new Date(2011, 1, 1, 0, 0);
+      var now = new Date();
+      var daysDifference = now.getTime() - startWork.getTime();
+      var yearsDifference = now.getYear() - startWork.getYear();
+      //2 days * 24 hours per day * month * 12 month per year i not work and 15 days vacation
+      var hoursNotWorked = (2 * 24 * 4 * 12 + 15) * yearsDifference;
+      var hoursWorked = daysDifference / (1000 * 60 * 60 * 24) * 24 / 2.1 - hoursNotWorked;
+      var hoursWorkedMask = Math.trunc(hoursWorked).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      $("#hoursWorked").text(hoursWorkedMask + " Working Hours");
+    });
+  },
+
+  initializeAge: function initializeAge() {
+    $(window).load(function () {
+      var birthday = Date.parse("1991/11/06");
+      var age = ~~((Date.now() - birthday) / maginNumber);
+
+      $("#age").text(age + " years old");
+    });
+  },
+
+  initializeFillBars: function initializeFillBars() {
+    var initialized = false;
+
+    window.addEventListener("pageChanged", function (e) {
+      if (!initialized && e && e.detail == "resume") {
+        $(".bar").each(function () {
+          var bar = $(this);
+          var percent = bar.attr("data-percent");
+          var customMessage = bar.attr("data-message");
+          var hastMessage = customMessage !== undefined;
+          bar.find(".progress").css("width", percent + "%");
+
+          if (hastMessage) {
+            bar.find(".progress").html("<span style=\"width: auto; border-radius: 20%;\"> " + customMessage + " </span>");
+          } else {
+            bar.find(".progress").html("<span> " + percent + " </span>");
+          }
+        });
+        initialized = true;
+      }
+    });
+  },
+
+  initializeStamp: function initializeStamp() {
+    $(window).load(function () {
+      console.clear();
+      utilities.printStamp();
+    });
+  },
+
+  printStamp: function printStamp() {
+    if (window.location.href.includes("portfolio/")) {
+      return;
+    }
+
+    var whereILive = $("#contact .fun-fact h4")[0].innerHTML;
+    var myName = "【﻿Ｄａｍｉáｎ Ｐｕｍａｒ】";
+    var myLastJob = $(".event p")[1].innerHTML.trim();
+    var otherServer = utilities.getOtherServer();
+
+    console.log("Sorry, I cleared console because I wanted show you this message below");
+    console.log(myName);
+    console.log("I live in " + whereILive);
+    console.log(myLastJob);
+    console.log("Code: https://github.com/damianpumar/myresume");
+    console.log("Other server: " + otherServer);
+    utilities.printSocialLinks();
+  },
+
+  printSocialLinks: function printSocialLinks() {
+
+    var unique = function unique(value, index, self) {
+      return self.indexOf(value) === index;
+    };
+
+    var socialLinks = [];
+
+    $(".social a").each(function () {
+      var link = $(this).attr("href");
+      if (link.includes("http")) {
+        socialLinks.push(link);
+      }
+    });
+
+    socialLinks.filter(unique).forEach(function (link) {
+      console.log("\u2022 " + link);
+    });
+  },
+
+  getOtherServer: function getOtherServer() {
+    var gitHubServer = "https://damianpumar.github.io";
+    var ownServer = "https://damianpumar.com";
+    return window.location.href.includes("github") ? ownServer : gitHubServer;
+  },
+
+  loadDownloadeableResume: function loadDownloadeableResume() {
+    var additionalInformation = $(".only-for-cv-paper");
+    additionalInformation.hide();
+
+    $("#download-resume").click(function () {
+      var resumeColor = $("#resume").css('background-color');
+      var cv = $("#cv");
+      cv.css('background-color', resumeColor);
+
+      var opt = {
+        filename: 'Damián Pumar - Resume',
+        image: { type: 'jpeg', quality: 0.98 },
+        jsPDF: { unit: 'pt', format: 'a3', orientation: 'portrait' },
+        backgroundColor: resumeColor,
+        pagebreak: { mode: ['ccs', "legacy"] }
+      };
+
+      $.blockUI({ message: '<h5>Creating CV...</h5>' });
+      additionalInformation.show();
+
+      html2pdf().set(opt).from(cv[0]).save().then(function () {
+        additionalInformation.hide();
+        $.unblockUI();
+      });
+    });
+  }
+};
+
+var masonry = {
+  initialize: function initialize() {
+    $(window).on("resize debouncedresize", function () {
+      masonry.refresh();
+    });
+
+    masonry.setup();
+  },
+  setup: function setup() {
+    var masonryElement = $(".masonry, .gallery");
+    if (masonryElement.length) {
+      masonryElement.each(function (index, el) {
+        masonry.refresh();
+        $(el).imagesLoaded(function () {
+          $(el).isotope({
+            layoutMode: $(el).data("layout") ? $(el).data("layout") : "masonry"
+          });
+          masonry.refresh();
+        });
+
+        if (!$(el).data("isotope")) {
+          var filters = $(el).siblings(".filters");
+          if (filters.length) {
+            filters.find("a").on("click", function () {
+              var selector = $(this).attr("data-filter");
+              $(el).isotope({ filter: selector });
+              $(this).parent().addClass("current").siblings().removeClass("current");
+              return false;
+            });
+          }
+        }
+      });
+    }
+  },
+  refresh: function refresh() {
+    var masonry = $(".masonry");
+    if (masonry.length) {
+      masonry.each(function (index, el) {
+        // check if isotope initialized
+        if ($(el).data("isotope")) {
+          var itemW = $(el).data("item-width");
+          var containerW = $(el).width();
+          var items = $(el).children(".hentry");
+          var columns = Math.round(containerW / itemW);
+
+          // set the widths (%) for each of item
+          items.each(function (index, element) {
+            var multiplier = $(this).hasClass("x2") && columns > 1 ? 2 : 1;
+            var itemRealWidth = Math.floor(containerW / columns) * 100 / containerW * multiplier;
+            $(this).css("width", itemRealWidth + "%");
+          });
+
+          var columnWidth = Math.floor(containerW / columns);
+
+          $(el).isotope("option", { masonry: { columnWidth: columnWidth } });
+          $(el).isotope("layout");
+        }
+      });
+    }
+  }
+};
+
+var lightbox = {
+  setup: function setup() {
+    if ($(".lightbox, .gallery").length) {
+      $(".media-box, .gallery").each(function (index, element) {
+        var $media_box = $(this);
+        $media_box.magnificPopup({
+          delegate: ".lightbox, .gallery-item a",
+          type: "image",
+          image: {
+            markup: '<div class="mfp-figure">' + '<div class="mfp-close"></div>' + '<div class="mfp-img"></div>' + "</div>" + '<div class="mfp-bottom-bar">' + '<div class="mfp-title"></div>' + '<div class="mfp-counter"></div>' + "</div>",
+
+            cursor: "mfp-zoom-out-cur",
+            verticalFit: true,
+            tError: '<a href="%url%">The image</a> could not be loaded.'
+          },
+          gallery: {
+            enabled: true,
+            tCounter: '<span class="mfp-counter">%curr% / %total%</span>'
+          },
+          iframe: {
+            markup: '<div class="mfp-iframe-scaler">' + '<div class="mfp-close"></div>' + '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' + '<div class="mfp-title">Some caption</div>' + "</div>"
+          },
+          mainClass: "mfp-zoom-in",
+          tLoading: "",
+          removalDelay: 300,
+          callbacks: {
+            markupParse: function markupParse(template, values, item) {
+              var title = "";
+              if (item.el.parents(".gallery-item").length) {
+                title = item.el.parents(".gallery-item").find(".gallery-caption").text();
+              } else {
+                title = item.el.attr("title") == undefined ? "" : item.el.attr("title");
+              }
+              values.title = title;
+            },
+            imageLoadComplete: function imageLoadComplete() {
+              var self = this;
+              setTimeout(function () {
+                self.wrap.addClass("mfp-image-loaded");
+              }, 16);
+            },
+            close: function close() {
+              this.wrap.removeClass("mfp-image-loaded");
+            },
+            beforeAppend: function beforeAppend() {
+              var self = this;
+              this.content.find("iframe").on("load", function () {
+                setTimeout(function () {
+                  self.wrap.addClass("mfp-image-loaded");
+                }, 16);
+              });
+            }
+          },
+          closeBtnInside: false,
+          closeOnContentClick: true,
+          midClick: true
+        });
+      });
+    }
+  }
+};
+
+var current = 0;
+var classicLayout = false;
+var inClass, outClass, portfolioKeyword, portfolioActive;
+window.nextAnimation = $("html").data("next-animation");
+window.prevAnimation = $("html").data("prev-animation");
+window.randomize = $("html").data("random-animation");
+window.isAnimating = false;
+var $main = $("#main"),
+    $pages = $main.children(".pt-page"),
+    $menuLinks = $(".nav-menu a"),
+    animcursor = 1,
+    endCurrPage = false,
+    endNextPage = false,
+    animEndEventNames = {
+  WebkitAnimation: "webkitAnimationEnd",
+  OAnimation: "oAnimationEnd",
+  msAnimation: "MSAnimationEnd",
+  animation: "animationend"
+},
+    animEndEventName = animEndEventNames[Modernizr.prefixed("animation")],
+    support = Modernizr.cssanimations;
+//-------------------
+var page = {
+  initialize: function initialize() {
+    window.nextPage = function (index) {
+      return new page.nextPage(index);
+    };
+
+    if ($("html").hasClass("one-page-layout")) {
+      portfolioKeyword = $("section.portfolio").attr("id");
+
+      var detailUrl = page.giveDetailUrl();
+
+      classicLayout = $("html").attr("data-classic-layout") === "true";
+      classicLayout = classicLayout || $("html").attr("data-mobile-classic-layout") === "true" && $(window).width() < 1025;
+      classicLayout = classicLayout || !Modernizr.cssanimations;
+      if (classicLayout) {
+        $("html").addClass("classic-layout");
+        page.setActivePage();
+        $.address.change(function () {
+          page.setActivePage();
+          $("html").removeClass("is-menu-toggled-on");
+        });
+      } else {
+        $("html").addClass("modern-layout");
+        $.address.change(function () {
+          page.setActivePage();
+          $("html").removeClass("is-menu-toggled-on");
+        });
+      }
+
+      $(".nav-menu a").on("click", function () {
+        if (window.isAnimating) {
+          return false;
+        }
+      });
+
+      $.address.change(function () {
+        var detailUrl = page.giveDetailUrl();
+        if (detailUrl != -1) {
+          page.showProjectDetails(detailUrl);
+        } else {
+          if ($.address.path().indexOf("/" + portfolioKeyword) != -1) {
+            page.hideProjectDetails(true, false);
+          }
+        }
+      });
+    }
+
+    $(".one-page-layout a.ajax").live("click", function () {
+      var url = $(this).attr("href");
+      var baseUrl = $.address.baseURL();
+      if (url.indexOf(baseUrl) !== -1) {
+        detailUrl = url.slice(baseUrl.length + 1);
+        $.address.path("/" + detailUrl);
+      } else {
+        $.address.path(portfolioKeyword + "/" + url.replace(".html", ""));
+      }
+      return false;
+    });
+  },
+
+  showProjectDetails: function showProjectDetails(url) {
+    loader.show();
+    if (!url.includes(".html")) url += ".html";
+
+    var portfolio = $(".p-overlay:not(.active)").first();
+    portfolioActive = $(".p-overlay.active");
+
+    portfolio.empty().load("/portfolio/" + url + " .portfolio-single", function () {
+      NProgress.set(0.5);
+
+      portfolio.imagesLoaded(function () {
+        masonry.setup();
+
+        if (portfolioActive.length) {
+          page.hideProjectDetails();
+        }
+
+        loader.hide();
+        $("html").addClass("p-overlay-on");
+        $("body").scrollTop(0);
+
+        page.setup();
+
+        if (classicLayout) {
+          portfolio.show();
+        } else {
+          portfolio.removeClass("animate-in animate-out").addClass("animate-in").show();
+        }
+        portfolio.addClass("active");
+      });
+
+      $(".back").each(function (index, el) {
+        $(el).attr("href", window.location.origin + "#portfolio");
+      });
+    });
+  },
+
+  setup: function setup() {
+    masonry.setup();
+
+    lightbox.setup();
+
+    $(".tabs").each(function () {
+      if (!$(this).find(".tab-titles li a.active").length) {
+        $(this).find(".tab-titles li:first-child a").addClass("active");
+        $(this).find(".tab-content > div:first-child").show();
+      } else {
+        $(this).find(".tab-content > div").eq($(this).find(".tab-titles li a.active").parent().index()).show();
+      }
+    });
+
+    $(".tabs .tab-titles li a").on("click", function () {
+      if ($(this).hasClass("active")) {
+        return;
+      }
+      $(this).parent().siblings().find("a").removeClass("active");
+      $(this).addClass("active");
+      $(this).parents(".tabs").find(".tab-content > div").hide().eq($(this).parent().index()).show();
+      return false;
+    });
+    var toggleSpeed = 300;
+    $(".toggle h4.active + .toggle-content").show();
+
+    $(".toggle h4").on("click", function () {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).next(".toggle-content").stop(true, true).slideUp(toggleSpeed);
+      } else {
+        $(this).addClass("active");
+        $(this).next(".toggle-content").stop(true, true).slideDown(toggleSpeed);
+
+        if ($(this).parents(".toggle-group").hasClass("accordion")) {
+          $(this).parent().siblings().find("h4").removeClass("active");
+          $(this).parent().siblings().find(".toggle-content").stop(true, true).slideUp(toggleSpeed);
+        }
+      }
+      return false;
+    });
+    if ($("iframe,video").length) {
+      $("html").fitVids();
+    }
+    $("select:not([multiple]), input:checkbox, input:radio, input:file").uniform();
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf("android") > -1;
+    if (isAndroid) {
+      $("html").addClass("android");
+    }
+  },
+
+  hideProjectDetails: function hideProjectDetails(forever, safeClose) {
+    $("body").scrollTop(0);
+
+    if (forever) {
+      portfolioActive = $(".p-overlay.active");
+      $("html").removeClass("p-overlay-on");
+      if (!safeClose) {
+        $.address.path(portfolioKeyword);
+      }
+    }
+
+    portfolioActive.removeClass("active");
+
+    if (classicLayout) {
+      portfolioActive.hide().empty();
+    } else {
+      portfolioActive.removeClass("animate-in animate-out").addClass("animate-out").removeClass("active").fadeOut().empty();
+
+      $("html").removeClass("p-overlay-on");
+    }
+  },
+
+  giveDetailUrl: function giveDetailUrl() {
+    var address = $.address.value();
+    var detailUrl;
+    if (address.indexOf("/" + portfolioKeyword + "/") != -1 && address.length > portfolioKeyword.length + 2) {
+      var total = address.length;
+      detailUrl = address.slice(portfolioKeyword.length + 2, total);
+    } else {
+      detailUrl = -1;
+    }
+    return detailUrl;
+  },
+
+  setActivePage: function setActivePage() {
+    var path = $.address.path();
+    path = path.slice(1, path.length);
+    path = page.giveDetailUrl() != -1 ? portfolioKeyword : path;
+    if (path == "") {
+      var firstPage = $(".nav-menu li").first().find("a").attr("href");
+      path = firstPage.slice(2, firstPage.length);
+      if (classicLayout) {
+        $("#" + path).addClass("page-current").siblings().removeClass("page-current");
+      } else {
+        $("#" + path).addClass("page-current");
+      }
+      page.setCurrentMenuItem();
+
+      return false;
+    } else {
+      if (page.giveDetailUrl() == -1) {
+        if (classicLayout) {
+          $("#" + path).addClass("page-current").siblings().removeClass("page-current");
+          page.setCurrentMenuItem();
+        } else {
+          if (!$(".page-current").length) {
+            $("#" + path).addClass("page-current");
+            current = $("#" + path).index();
+            page.setCurrentMenuItem();
+          } else {
+            page.nextPage($("#" + path).index());
+          }
+        }
+      }
+    }
+  },
+
+  nextPage: function nextPage(nextPageIndex) {
+    if (nextPageIndex === current) {
+      return;
+    }
+    var animation = nextPageIndex > current ? nextAnimation : prevAnimation;
+
+    if (randomize) {
+      if (animcursor > 67) {
+        animcursor = 1;
+      }
+      animation = animcursor;
+      ++animcursor;
+    }
+    if (window.isAnimating) {
+      return false;
+    }
+    window.isAnimating = true;
+    var $currPage = $pages.eq(current);
+    current = nextPageIndex;
+    var $nextPage = $pages.eq(current).addClass("page-current");
+    switch (animation) {
+      case 1:
+        outClass = "pt-page-moveToLeft";
+        inClass = "pt-page-moveFromRight";
+        break;
+      case 2:
+        outClass = "pt-page-moveToRight";
+        inClass = "pt-page-moveFromLeft";
+        break;
+      case 3:
+        outClass = "pt-page-moveToTop";
+        inClass = "pt-page-moveFromBottom";
+        break;
+      case 4:
+        outClass = "pt-page-moveToBottom";
+        inClass = "pt-page-moveFromTop";
+        break;
+      case 5:
+        outClass = "pt-page-fade";
+        inClass = "pt-page-moveFromRight pt-page-ontop";
+        break;
+      case 6:
+        outClass = "pt-page-fade";
+        inClass = "pt-page-moveFromLeft pt-page-ontop";
+        break;
+      case 7:
+        outClass = "pt-page-fade";
+        inClass = "pt-page-moveFromBottom pt-page-ontop";
+        break;
+      case 8:
+        outClass = "pt-page-fade";
+        inClass = "pt-page-moveFromTop pt-page-ontop";
+        break;
+      case 9:
+        outClass = "pt-page-moveToLeftFade";
+        inClass = "pt-page-moveFromRightFade";
+        break;
+      case 10:
+        outClass = "pt-page-moveToRightFade";
+        inClass = "pt-page-moveFromLeftFade";
+        break;
+      case 11:
+        outClass = "pt-page-moveToTopFade";
+        inClass = "pt-page-moveFromBottomFade";
+        break;
+      case 12:
+        outClass = "pt-page-moveToBottomFade";
+        inClass = "pt-page-moveFromTopFade";
+        break;
+      case 13:
+        outClass = "pt-page-moveToLeftEasing pt-page-ontop";
+        inClass = "pt-page-moveFromRight";
+        break;
+      case 14:
+        outClass = "pt-page-moveToRightEasing pt-page-ontop";
+        inClass = "pt-page-moveFromLeft";
+        break;
+      case 15:
+        outClass = "pt-page-moveToTopEasing pt-page-ontop";
+        inClass = "pt-page-moveFromBottom";
+        break;
+      case 16:
+        outClass = "pt-page-moveToBottomEasing pt-page-ontop";
+        inClass = "pt-page-moveFromTop";
+        break;
+      case 17:
+        outClass = "pt-page-scaleDown";
+        inClass = "pt-page-moveFromRight pt-page-ontop";
+        break;
+      case 18:
+        outClass = "pt-page-scaleDown";
+        inClass = "pt-page-moveFromLeft pt-page-ontop";
+        break;
+      case 19:
+        outClass = "pt-page-scaleDown";
+        inClass = "pt-page-moveFromBottom pt-page-ontop";
+        break;
+      case 20:
+        outClass = "pt-page-scaleDown";
+        inClass = "pt-page-moveFromTop pt-page-ontop";
+        break;
+      case 21:
+        outClass = "pt-page-scaleDown";
+        inClass = "pt-page-scaleUpDown pt-page-delay300";
+        break;
+      case 22:
+        outClass = "pt-page-scaleDownUp";
+        inClass = "pt-page-scaleUp pt-page-delay300";
+        break;
+      case 23:
+        outClass = "pt-page-moveToLeft pt-page-ontop";
+        inClass = "pt-page-scaleUp";
+        break;
+      case 24:
+        outClass = "pt-page-moveToRight pt-page-ontop";
+        inClass = "pt-page-scaleUp";
+        break;
+      case 25:
+        outClass = "pt-page-moveToTop pt-page-ontop";
+        inClass = "pt-page-scaleUp";
+        break;
+      case 26:
+        outClass = "pt-page-moveToBottom pt-page-ontop";
+        inClass = "pt-page-scaleUp";
+        break;
+      case 27:
+        outClass = "pt-page-scaleDownCenter";
+        inClass = "pt-page-scaleUpCenter pt-page-delay400";
+        break;
+      case 28:
+        outClass = "pt-page-rotateRightSideFirst";
+        inClass = "pt-page-moveFromRight pt-page-delay200 pt-page-ontop";
+        break;
+      case 29:
+        outClass = "pt-page-rotateLeftSideFirst";
+        inClass = "pt-page-moveFromLeft pt-page-delay200 pt-page-ontop";
+        break;
+      case 30:
+        outClass = "pt-page-rotateTopSideFirst";
+        inClass = "pt-page-moveFromTop pt-page-delay200 pt-page-ontop";
+        break;
+      case 31:
+        outClass = "pt-page-rotateBottomSideFirst";
+        inClass = "pt-page-moveFromBottom pt-page-delay200 pt-page-ontop";
+        break;
+      case 32:
+        outClass = "pt-page-flipOutRight";
+        inClass = "pt-page-flipInLeft pt-page-delay500";
+        break;
+      case 33:
+        outClass = "pt-page-flipOutLeft";
+        inClass = "pt-page-flipInRight pt-page-delay500";
+        break;
+      case 34:
+        outClass = "pt-page-flipOutTop";
+        inClass = "pt-page-flipInBottom pt-page-delay500";
+        break;
+      case 35:
+        outClass = "pt-page-flipOutBottom";
+        inClass = "pt-page-flipInTop pt-page-delay500";
+        break;
+      case 36:
+        outClass = "pt-page-rotateFall pt-page-ontop";
+        inClass = "pt-page-scaleUp";
+        break;
+      case 37:
+        outClass = "pt-page-rotateOutNewspaper";
+        inClass = "pt-page-rotateInNewspaper pt-page-delay500";
+        break;
+      case 38:
+        outClass = "pt-page-rotatePushLeft";
+        inClass = "pt-page-moveFromRight";
+        break;
+      case 39:
+        outClass = "pt-page-rotatePushRight";
+        inClass = "pt-page-moveFromLeft";
+        break;
+      case 40:
+        outClass = "pt-page-rotatePushTop";
+        inClass = "pt-page-moveFromBottom";
+        break;
+      case 41:
+        outClass = "pt-page-rotatePushBottom";
+        inClass = "pt-page-moveFromTop";
+        break;
+      case 42:
+        outClass = "pt-page-rotatePushLeft";
+        inClass = "pt-page-rotatePullRight pt-page-delay180";
+        break;
+      case 43:
+        outClass = "pt-page-rotatePushRight";
+        inClass = "pt-page-rotatePullLeft pt-page-delay180";
+        break;
+      case 44:
+        outClass = "pt-page-rotatePushTop";
+        inClass = "pt-page-rotatePullBottom pt-page-delay180";
+        break;
+      case 45:
+        outClass = "pt-page-rotatePushBottom";
+        inClass = "pt-page-rotatePullTop pt-page-delay180";
+        break;
+      case 46:
+        outClass = "pt-page-rotateFoldLeft";
+        inClass = "pt-page-moveFromRightFade";
+        break;
+      case 47:
+        outClass = "pt-page-rotateFoldRight";
+        inClass = "pt-page-moveFromLeftFade";
+        break;
+      case 48:
+        outClass = "pt-page-rotateFoldTop";
+        inClass = "pt-page-moveFromBottomFade";
+        break;
+      case 49:
+        outClass = "pt-page-rotateFoldBottom";
+        inClass = "pt-page-moveFromTopFade";
+        break;
+      case 50:
+        outClass = "pt-page-moveToRightFade";
+        inClass = "pt-page-rotateUnfoldLeft";
+        break;
+      case 51:
+        outClass = "pt-page-moveToLeftFade";
+        inClass = "pt-page-rotateUnfoldRight";
+        break;
+      case 52:
+        outClass = "pt-page-moveToBottomFade";
+        inClass = "pt-page-rotateUnfoldTop";
+        break;
+      case 53:
+        outClass = "pt-page-moveToTopFade";
+        inClass = "pt-page-rotateUnfoldBottom";
+        break;
+      case 54:
+        outClass = "pt-page-rotateRoomLeftOut pt-page-ontop";
+        inClass = "pt-page-rotateRoomLeftIn";
+        break;
+      case 55:
+        outClass = "pt-page-rotateRoomRightOut pt-page-ontop";
+        inClass = "pt-page-rotateRoomRightIn";
+        break;
+      case 56:
+        outClass = "pt-page-rotateRoomTopOut pt-page-ontop";
+        inClass = "pt-page-rotateRoomTopIn";
+        break;
+      case 57:
+        outClass = "pt-page-rotateRoomBottomOut pt-page-ontop";
+        inClass = "pt-page-rotateRoomBottomIn";
+        break;
+      case 58:
+        outClass = "pt-page-rotateCubeLeftOut pt-page-ontop";
+        inClass = "pt-page-rotateCubeLeftIn";
+        break;
+      case 59:
+        outClass = "pt-page-rotateCubeRightOut pt-page-ontop";
+        inClass = "pt-page-rotateCubeRightIn";
+        break;
+      case 60:
+        outClass = "pt-page-rotateCubeTopOut pt-page-ontop";
+        inClass = "pt-page-rotateCubeTopIn";
+        break;
+      case 61:
+        outClass = "pt-page-rotateCubeBottomOut pt-page-ontop";
+        inClass = "pt-page-rotateCubeBottomIn";
+        break;
+      case 62:
+        outClass = "pt-page-rotateCarouselLeftOut pt-page-ontop";
+        inClass = "pt-page-rotateCarouselLeftIn";
+        break;
+      case 63:
+        outClass = "pt-page-rotateCarouselRightOut pt-page-ontop";
+        inClass = "pt-page-rotateCarouselRightIn";
+        break;
+      case 64:
+        outClass = "pt-page-rotateCarouselTopOut pt-page-ontop";
+        inClass = "pt-page-rotateCarouselTopIn";
+        break;
+      case 65:
+        outClass = "pt-page-rotateCarouselBottomOut pt-page-ontop";
+        inClass = "pt-page-rotateCarouselBottomIn";
+        break;
+      case 66:
+        outClass = "pt-page-rotateSidesOut";
+        inClass = "pt-page-rotateSidesIn pt-page-delay200";
+        break;
+      case 67:
+        outClass = "pt-page-rotateSlideOut";
+        inClass = "pt-page-rotateSlideIn";
+        break;
+    }
+    $currPage.addClass(outClass).on(animEndEventName, function () {
+      $currPage.off(animEndEventName);
+      endCurrPage = true;
+      if (endNextPage) {
+        page.onEndAnimation($currPage, $nextPage);
+      }
+    });
+    $nextPage.addClass(inClass).on(animEndEventName, function () {
+      $nextPage.off(animEndEventName);
+      endNextPage = true;
+      if (endCurrPage) {
+        page.onEndAnimation($currPage, $nextPage);
+      }
+    });
+    if (!support) {
+      page.onEndAnimation($currPage, $nextPage);
+    }
+  },
+
+  onEndAnimation: function onEndAnimation($outpage, $inpage) {
+    endCurrPage = false;
+    endNextPage = false;
+    page.resetPage($outpage, $inpage);
+    window.isAnimating = false;
+    page.setCurrentMenuItem();
+  },
+
+  resetPage: function resetPage($outpage, $inpage) {
+    $outpage.removeClass(outClass);
+    $inpage.removeClass(inClass);
+    $pages.eq(current).siblings().removeClass("page-current");
+  },
+
+  setCurrentMenuItem: function setCurrentMenuItem() {
+    var activePageId = $(".pt-page.page-current").attr("id");
+
+    $(".nav-menu a[href$=" + activePageId + "]").parent().addClass("current_page_item").siblings().removeClass("current_page_item");
+
+    page.raisePageChanged();
+  },
+
+  raisePageChanged: function raisePageChanged() {
+    var path = $.address.path();
+    path = path.slice(1, path.length);
+    var evt = new CustomEvent("pageChanged", { detail: path });
+
+    window.dispatchEvent(evt);
+  }
+};
+
+var typist = {
+  initialize: function initialize() {
+    $(window).load(function () {
+      var typist = document.querySelector("#typist-element");
+
+      new Typist(typist, {
+        letterInterval: 60,
+        textInterval: 3000
+      });
+    });
+  }
+};
+
+var header = {
+  initialize: function initialize() {
+    $(".search-toggle").on("click", function () {
+      $("html").toggleClass("is-search-toggled-on");
+      $(".search-box input").trigger("focus");
+    });
+    $(".menu-toggle").on("click", function () {
+      $("html").toggleClass("is-menu-toggled-on");
+    });
+
+    var toggleSpeed = 300;
+    $(".toggle h4.active + .toggle-content").show();
+    $(".toggle h4").on("click", function () {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).next(".toggle-content").stop(true, true).slideUp(toggleSpeed);
+      } else {
+        $(this).addClass("active");
+        $(this).next(".toggle-content").stop(true, true).slideDown(toggleSpeed);
+
+        if ($(this).parents(".toggle-group").hasClass("accordion")) {
+          $(this).parent().siblings().find("h4").removeClass("active");
+          $(this).parent().siblings().find(".toggle-content").stop(true, true).slideUp(toggleSpeed);
+        }
+      }
+      return false;
+    });
+
+    $("select:not([multiple]), input:checkbox, input:radio, input:file").uniform();
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf("android") > -1;
+    if (isAndroid) {
+      $("html").addClass("android");
+    }
+  }
+};
+
+var responsive = {
+  initialize: function initialize() {
+    FastClick.attach(document.body);
+  }
+};
+
+var form = {
+  applyValidators: function applyValidators() {
+    $("#contact-form").addClass("validate-form");
+    $("#contact-form").find("input,textarea").each(function (index, element) {
+      if ($(this).attr("aria-required") === "true") {
+        $(this).addClass("required");
+      }
+      if ($(this).attr("name") === "email") {
+        $(this).addClass("email");
+      }
+    });
+
+    if ($(".validate-form").length) {
+      $(".validate-form").each(function () {
+        $(this).validate({
+          ignore: ".ignore",
+          rules: {
+            hiddenRecaptcha: {
+              required: function required() {
+                if (grecaptcha.getResponse() == "") {
+                  return true;
+                } else {
+                  return false;
+                }
+              }
+            }
+          }
+        });
+      });
+    }
+  }
+};
+
+var email = {
+  initialize: function initialize() {
+    var contactForm = $("#contact-form");
+    var $alert = $(".site-alert");
+    var $submit = contactForm.find(".submit");
+    contactForm.submit(function (event) {
+      event.preventDefault();
+      sendEmail(contactForm);
+    });
+
+    function sendEmail(contactForm) {
+      if (contactForm.valid()) {
+        NProgress.start();
+        $submit.addClass("active loading");
+        $.ajax({
+          url: contactForm.attr("action"),
+          type: contactForm.attr("method"),
+          dataType: "JSON",
+          crossDomain: true,
+          contentType: "application/json; charset=utf-8",
+          data: JSON.stringify(contactForm.serializeObject()),
+          success: function success(data) {
+            contactForm.clearForm();
+          },
+          error: function error(textStatus, errorThrown) {
+            $alert.addClass("error");
+          },
+          complete: function complete() {
+            NProgress.done();
+            $alert.show();
+            setTimeout(function () {
+              $alert.hide();
+            }, 6000);
+          }
+        });
+      }
+    }
+    $.fn.serializeObject = function () {
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a, function () {
+        if (o[this.name] !== undefined) {
+          if (!o[this.name].push) {
+            o[this.name] = [o[this.name]];
+          }
+          o[this.name].push(this.value || "");
+        } else {
+          o[this.name] = this.value || "";
+        }
+      });
+      return o;
+    };
+    $.fn.clearForm = function () {
+      grecaptcha.reset();
+      $(".contact-form #name").focus();
+
+      return this.each(function () {
+        var type = this.type,
+            tag = this.tagName.toLowerCase();
+        if (tag == "form") return $(":input", this).clearForm();
+        if (type == "text" || type == "password" || tag == "textarea" || type == "email") this.value = "";else if (type == "checkbox" || type == "radio") this.checked = false;else if (tag == "select") this.selectedIndex = -1;
+      });
+    };
+  }
+};
+
+var maps = {
+  intialize: function intialize() {
+    var mapCanvas = $("#map-canvas");
+
+    if (mapCanvas.length) {
+      google.maps.event.addDomListener(window, "load", initializeMap);
+    }
+
+    function initializeMap() {
+      var latitude = mapCanvas.data("latitude");
+      var longitude = mapCanvas.data("longitude");
+      var position = new google.maps.LatLng(latitude, longitude);
+      var zoom = mapCanvas.data("zoom");
+      var mapOptions = {
+        zoom: zoom,
+        disableDefaultUI: true,
+        center: position,
+        styles: [{
+          featureType: "administrative.locality",
+          elementType: "all",
+          stylers: [{
+            hue: "#2c2e33"
+          }, {
+            saturation: 7
+          }, {
+            lightness: 19
+          }, {
+            visibility: "on"
+          }]
+        }, {
+          featureType: "landscape",
+          elementType: "all",
+          stylers: [{
+            hue: "#ffffff"
+          }, {
+            saturation: -100
+          }, {
+            lightness: 100
+          }, {
+            visibility: "simplified"
+          }]
+        }, {
+          featureType: "poi",
+          elementType: "all",
+          stylers: [{
+            hue: "#ffffff"
+          }, {
+            saturation: -100
+          }, {
+            lightness: 100
+          }, {
+            visibility: "off"
+          }]
+        }, {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [{
+            hue: "#bbc0c4"
+          }, {
+            saturation: -93
+          }, {
+            lightness: 31
+          }, {
+            visibility: "simplified"
+          }]
+        }, {
+          featureType: "road",
+          elementType: "labels",
+          stylers: [{
+            hue: "#bbc0c4"
+          }, {
+            saturation: -93
+          }, {
+            lightness: 31
+          }, {
+            visibility: "on"
+          }]
+        }, {
+          featureType: "road.arterial",
+          elementType: "labels",
+          stylers: [{
+            hue: "#bbc0c4"
+          }, {
+            saturation: -93
+          }, {
+            lightness: -2
+          }, {
+            visibility: "simplified"
+          }]
+        }, {
+          featureType: "road.local",
+          elementType: "geometry",
+          stylers: [{
+            hue: "#e9ebed"
+          }, {
+            saturation: -90
+          }, {
+            lightness: -8
+          }, {
+            visibility: "simplified"
+          }]
+        }, {
+          featureType: "transit",
+          elementType: "all",
+          stylers: [{
+            hue: "#e9ebed"
+          }, {
+            saturation: 10
+          }, {
+            lightness: 69
+          }, {
+            visibility: "on"
+          }]
+        }, {
+          featureType: "water",
+          elementType: "all",
+          stylers: [{
+            hue: "#e9ebed"
+          }, {
+            saturation: -78
+          }, {
+            lightness: 67
+          }, {
+            visibility: "simplified"
+          }]
+        }]
+      };
+
+      var mapElement = document.getElementById("map-canvas");
+      var map = new google.maps.Map(mapElement, mapOptions);
+      map.panBy(0, 50);
+      new google.maps.Marker({
+        position: position,
+        map: map
+      });
+    }
+  }
+};
+
+var snackBar = {
+  initialize: function initialize() {
+    $(window).load(function () {
+      window.setTimeout(show, 2000);
+    });
+  }
+};
+function show() {
+  var snackBarWasShown = window.localStorage.getItem("_sbSW");
+
+  if (snackBarWasShown) return;
+
+  var snackbar = $(".snackbar");
+
+  if (!snackbar) return;
+
+  snackbar.fadeIn("slow");
+
+  window.setTimeout(function () {
+    snackbar.fadeOut();
+  }, 6000);
+
+  hideWhenClicked(snackbar);
+}
+function hideWhenClicked(snackbar) {
+  $(".snackbar").click(function (e) {
+    snackbar.hide();
+
+    window.localStorage.setItem("_sbSW", "true");
+  });
+}
+
+var initializer = {
+  initialize: function initialize() {
+    utilities.loadImagesAsync();
+    loader.initialize();
+    maps.intialize();
+    utilities.initializeFillBars();
+    header.initialize();
+    responsive.initialize();
+    form.applyValidators();
+    email.initialize();
+    page.initialize();
+    snackBar.initialize();
+    typist.initialize();
+    utilities.initializeHoursWorked();
+    utilities.initializeAge();
+    utilities.initializeStamp();
+    utilities.loadDownloadeableResume();
+    masonry.initialize();
+  }
+};
+
+(function ($) {
+
+  initializer.initialize();
+})(jQuery);
