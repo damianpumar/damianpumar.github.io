@@ -18,10 +18,10 @@ portfolio/spectacle-collaboration.html
 portfolio/svelte-collaboration.html
 portfolio/xamarinplugin-lib.html
 images/bckg/loading-light.gif
-images/ico/apple-touch-icon.png
-images/ico/favicon.ico
 images/flags/ar.png
 images/flags/it.png
+images/ico/apple-touch-icon.png
+images/ico/favicon.ico
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -42,11 +42,6 @@ images/portfolio/09-01.png
 images/portfolio/09.png
 images/portfolio/10-01.png
 images/portfolio/10.png
-images/testimonials/1.jpg
-images/testimonials/2.jpg
-images/testimonials/3.jpg
-images/testimonials/4.jpg
-images/testimonials/5.jpg
 images/site/avatar.jpg
 images/site/avatar_metadata.jpg
 images/site/high-res-home.jpg
@@ -55,6 +50,11 @@ images/site/icon-02.png
 images/site/icon-03.png
 images/site/icon-04.png
 images/site/low-res-home.jpg
+images/testimonials/1.jpg
+images/testimonials/2.jpg
+images/testimonials/3.jpg
+images/testimonials/4.jpg
+images/testimonials/5.jpg
 js/vendor/fastclick.js
 js/vendor/html2pdf.bundle.min.js
 js/vendor/imagesloaded.pkgd.min.js
@@ -78,12 +78,12 @@ js/vendor/jquery.uniform/uniform.default.css
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -98,4 +98,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: d5546c9d12f444b0c81f73d2e7ba2b25ad596bd2b723e343826bbfdecedcbfbb
+# hash: b3fc281d66c8dd1513f27e1e81b0d2d052e6f269517ec23f497586bd200613b1
