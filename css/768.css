@@ -1,5 +1,5 @@
 /*!
- * FullCoders v.1.10.2019+ (https://www.fullcoders.com)
+ * FullCoders v.1.11.2019+ (https://www.fullcoders.com)
  * Copyright 2019 FullCoders
  * Licensed under  ()
  */
@@ -198,13 +198,6 @@
   .home-section h4 {
     font-size: 0.75em;
   }
-  /* BLOG */
-  .post .entry-content > p img:not(.alignleft):not(.alignright),
-  .post .entry-content .gallery {
-    width: 132%;
-    max-width: none;
-    margin-left: -16%;
-  }
   /* format-link */
   .format-link .entry-content > p:first-child a:first-child {
     font-size: 1.2em;
@@ -322,12 +315,6 @@
   .service h4 {
     margin-left: 0;
     margin-bottom: 0.8em;
-  }
-  /* BLOG */
-  .post .entry-content > p img:not(.alignleft):not(.alignright),
-  .post .entry-content .gallery {
-    width: 158%;
-    margin-left: -29%;
   }
   /* BLOG SINGLE */
   .blog-single .entry-content {

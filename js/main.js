@@ -1,5 +1,5 @@
 /*!
- * FullCoders v.1.10.2019+ (https://www.fullcoders.com)
+ * FullCoders v.1.11.2019+ (https://www.fullcoders.com)
  * Copyright 2019 FullCoders
  * Licensed under  ()
  */
@@ -188,7 +188,7 @@ var masonry = {
     masonry.setup();
   },
   setup: function setup() {
-    var masonryElement = $(".masonry, .gallery");
+    var masonryElement = $(".masonry");
     if (masonryElement.length) {
       masonryElement.each(function (index, el) {
         masonry.refresh();
@@ -236,68 +236,6 @@ var masonry = {
           $(el).isotope("option", { masonry: { columnWidth: columnWidth } });
           $(el).isotope("layout");
         }
-      });
-    }
-  }
-};
-
-var lightbox = {
-  setup: function setup() {
-    if ($(".lightbox, .gallery").length) {
-      $(".media-box, .gallery").each(function (index, element) {
-        var $media_box = $(this);
-        $media_box.magnificPopup({
-          delegate: ".lightbox, .gallery-item a",
-          type: "image",
-          image: {
-            markup: '<div class="mfp-figure">' + '<div class="mfp-close"></div>' + '<div class="mfp-img"></div>' + "</div>" + '<div class="mfp-bottom-bar">' + '<div class="mfp-title"></div>' + '<div class="mfp-counter"></div>' + "</div>",
-
-            cursor: "mfp-zoom-out-cur",
-            verticalFit: true,
-            tError: '<a href="%url%">The image</a> could not be loaded.'
-          },
-          gallery: {
-            enabled: true,
-            tCounter: '<span class="mfp-counter">%curr% / %total%</span>'
-          },
-          iframe: {
-            markup: '<div class="mfp-iframe-scaler">' + '<div class="mfp-close"></div>' + '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' + '<div class="mfp-title">Some caption</div>' + "</div>"
-          },
-          mainClass: "mfp-zoom-in",
-          tLoading: "",
-          removalDelay: 300,
-          callbacks: {
-            markupParse: function markupParse(template, values, item) {
-              var title = "";
-              if (item.el.parents(".gallery-item").length) {
-                title = item.el.parents(".gallery-item").find(".gallery-caption").text();
-              } else {
-                title = item.el.attr("title") == undefined ? "" : item.el.attr("title");
-              }
-              values.title = title;
-            },
-            imageLoadComplete: function imageLoadComplete() {
-              var self = this;
-              setTimeout(function () {
-                self.wrap.addClass("mfp-image-loaded");
-              }, 16);
-            },
-            close: function close() {
-              this.wrap.removeClass("mfp-image-loaded");
-            },
-            beforeAppend: function beforeAppend() {
-              var self = this;
-              this.content.find("iframe").on("load", function () {
-                setTimeout(function () {
-                  self.wrap.addClass("mfp-image-loaded");
-                }, 16);
-              });
-            }
-          },
-          closeBtnInside: false,
-          closeOnContentClick: true,
-          midClick: true
-        });
       });
     }
   }
@@ -425,8 +363,6 @@ var page = {
   setup: function setup() {
     masonry.setup();
 
-    lightbox.setup();
-
     $(".tabs").each(function () {
       if (!$(this).find(".tab-titles li a.active").length) {
         $(this).find(".tab-titles li:first-child a").addClass("active");
@@ -465,12 +401,6 @@ var page = {
     });
     if ($("iframe,video").length) {
       $("html").fitVids();
-    }
-    $("select:not([multiple]), input:checkbox, input:radio, input:file").uniform();
-    var ua = navigator.userAgent.toLowerCase();
-    var isAndroid = ua.indexOf("android") > -1;
-    if (isAndroid) {
-      $("html").addClass("android");
     }
   },
 
@@ -921,8 +851,6 @@ var header = {
       }
       return false;
     });
-
-    $("select:not([multiple]), input:checkbox, input:radio, input:file").uniform();
     var ua = navigator.userAgent.toLowerCase();
     var isAndroid = ua.indexOf("android") > -1;
     if (isAndroid) {
