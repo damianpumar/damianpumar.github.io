@@ -22,6 +22,14 @@ images/flags/ar.png
 images/flags/it.png
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
+images/site/avatar.jpg
+images/site/avatar_metadata.jpg
+images/site/high-res-home.jpg
+images/site/icon-01.png
+images/site/icon-02.png
+images/site/icon-03.png
+images/site/icon-04.png
+images/site/low-res-home.jpg
 images/portfolio/01-01.png
 images/portfolio/01-02.png
 images/portfolio/01-03.png
@@ -47,14 +55,6 @@ images/testimonials/2.jpg
 images/testimonials/3.jpg
 images/testimonials/4.jpg
 images/testimonials/5.jpg
-images/site/avatar.jpg
-images/site/avatar_metadata.jpg
-images/site/high-res-home.jpg
-images/site/icon-01.png
-images/site/icon-02.png
-images/site/icon-03.png
-images/site/icon-04.png
-images/site/low-res-home.jpg
 js/vendor/fastclick.js
 js/vendor/html2pdf.bundle.min.js
 js/vendor/imagesloaded.pkgd.min.js
@@ -93,4 +93,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 31e9cec361d08cb19b81df2e648696ea41664b442a33f05c26844f4a46205ab6
+# hash: d721bd2d3ed6d67596709347c528fdceec01f326056ca397a4afe114ae275c96
