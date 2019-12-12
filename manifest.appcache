@@ -8,9 +8,9 @@ css/bootstrap.min.css
 css/jquery.modal.min.css
 css/main.css
 js/main.js
+images/bckg/loading-light.gif
 images/flags/ar.png
 images/flags/it.png
-images/bckg/loading-light.gif
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
 images/portfolio/01.jpg
@@ -53,12 +53,12 @@ js/vendor/typist.js
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -73,4 +73,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 20740fe9e95e08ae05df55abbefd24d2b88982a3632996f525cbdd28210c3467
+# hash: 8d65332cd0c4a7ca0db7dc5e6a2251ec2aa17c51102b5f3104c7913e648333ed

@@ -531,7 +531,7 @@
 }
 
 /* DESKTOPS EXTRA LARGE */
-@media screen and (min-width: 1660px) {
+@media screen and (min-width: 1960px) {
   /* SECTION TITLE */
   .section-title {
     margin: 3em 0 2em;
@@ -540,6 +540,7 @@
   .filters {
     margin: 2em 0;
   }
+
   .content {
     height: 100%;
   }
