@@ -1,6 +1,6 @@
 /*!
- * FullCoders v.4.11.2019+ (https://www.fullcoders.com)
- * Copyright 2019 FullCoders
+ * FullCoders v.1.3.2020+ (https://www.fullcoders.com)
+ * Copyright 2020 FullCoders
  * Licensed under  ()
  */
 'use strict';
