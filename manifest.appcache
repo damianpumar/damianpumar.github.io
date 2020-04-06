@@ -9,10 +9,18 @@ css/jquery.modal.min.css
 css/main.css
 js/main.js
 images/bckg/loading-light.gif
-images/flags/ar.png
-images/flags/it.png
 images/ico/apple-touch-icon.png
 images/ico/favicon.ico
+images/flags/ar.png
+images/flags/it.png
+images/site/avatar.jpg
+images/site/avatar_metadata.jpg
+images/site/high-res-home.jpg
+images/site/icon-01.png
+images/site/icon-02.png
+images/site/icon-03.png
+images/site/icon-04.png
+images/site/low-res-home.jpg
 images/portfolio/01.jpg
 images/portfolio/02.png
 images/portfolio/03.png
@@ -22,14 +30,6 @@ images/portfolio/06.png
 images/portfolio/08.png
 images/portfolio/09.png
 images/portfolio/10.png
-images/site/avatar.jpg
-images/site/avatar_metadata.jpg
-images/site/high-res-home.jpg
-images/site/icon-01.png
-images/site/icon-02.png
-images/site/icon-03.png
-images/site/icon-04.png
-images/site/low-res-home.jpg
 images/testimonials/1.jpg
 images/testimonials/2.jpg
 images/testimonials/3.jpg
@@ -73,4 +73,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: bed5cbd9ce5af82da0f782bf6c1fe8485e2649868624595d73eb28e4834880b1
+# hash: faa322ff3179bcd2d9acddc6cea5f609831e267ad231bc18dce1f625f39338eb
