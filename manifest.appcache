@@ -1,7 +1,6 @@
 CACHE MANIFEST
 
 CACHE:
-index.html
 css/768.css
 css/animations.css
 css/bootstrap.min.css
@@ -24,6 +23,7 @@ images/site/low-res-home.jpg
 images/portfolio/20dejunio.png
 images/portfolio/awesomeserializer.png
 images/portfolio/curtme.org.png
+images/portfolio/emailsender.png
 images/portfolio/fastlist.jpg
 images/portfolio/i18njs.png
 images/portfolio/kubernetes.png
@@ -55,12 +55,12 @@ js/vendor/typist.js
 js/vendor/nprogress/nprogress.css
 js/vendor/nprogress/nprogress.js
 css/fonts/fontello/css/fontello.css
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/fontello/font/fontellofa26.eot
 css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
@@ -75,4 +75,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: ec16eb8a4968d83f74c8114396afb7297884720766a1ef276247c15592a524e8
+# hash: 0b61f130033b7680d98a3cbbc30ff54ce4b84fc3165f7cdf6cb00ee965272d1b
