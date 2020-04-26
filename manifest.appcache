@@ -60,12 +60,12 @@ css/fonts/fontello/font/fontellofa26.svg
 css/fonts/fontello/font/fontellofa26.ttf
 css/fonts/fontello/font/fontellofa26.woff
 css/fonts/fontello/font/fontellofa26.woff2
-css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.woff
 css/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroked41d.eot
+css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
 
 NETWORK:
 http://*
@@ -75,4 +75,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 0b61f130033b7680d98a3cbbc30ff54ce4b84fc3165f7cdf6cb00ee965272d1b
+# hash: a0e50433bccbb531de6d2ec4717ec3bed49604a997d1cf0337ae7778ddc6c28d
