@@ -17,8 +17,6 @@ blog/lee.png
 blog/looper.jpg
 ico/apple-touch-icon.png
 ico/favicon.ico
-site/avatar.jpg
-site/avatar_metadata.jpg
 portfolio/20dejunio-01.jpg
 portfolio/20dejunio.png
 portfolio/awesomeserializer-01.png
@@ -44,12 +42,15 @@ portfolio/svelte-01.png
 portfolio/svelte.png
 portfolio/xamarinplugin-01.png
 portfolio/xamarinplugin.png
+site/avatar.jpg
+site/avatar_metadata.jpg
 testimonials/1.jpg
 testimonials/2.jpg
 testimonials/3.jpg
 testimonials/4.jpg
 testimonials/5.jpg
 testimonials/6.jpg
+testimonials/7.jpg
 
 NETWORK:
 http://*
@@ -59,4 +60,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 80dea8a1a174cd5380e3e5b194a22185ddd4ed0562437b5810af39426323013c
+# hash: 0ef4fd5d651301bdf954de0508504ff522fe1a0b2693307c4f43256b43c3e1ae
