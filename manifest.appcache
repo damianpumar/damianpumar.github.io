@@ -3,6 +3,8 @@ CACHE MANIFEST
 CACHE:
 bckg/stamp-mask.png
 bckg/stamp.png
+ico/apple-touch-icon.png
+ico/favicon.ico
 blog/blog-01.png
 blog/blog-02.png
 blog/blog-03.png
@@ -15,8 +17,6 @@ blog/daft-punk-presentation.png
 blog/lee-2.png
 blog/lee.png
 blog/looper.jpg
-ico/apple-touch-icon.png
-ico/favicon.ico
 portfolio/20dejunio-01.jpg
 portfolio/20dejunio.png
 portfolio/awesomeserializer-01.png
@@ -60,4 +60,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 0ef4fd5d651301bdf954de0508504ff522fe1a0b2693307c4f43256b43c3e1ae
+# hash: c8ba0ed40b2325022368fb7b4d532129c285da297204ec070ae9864bd1ab1e25
