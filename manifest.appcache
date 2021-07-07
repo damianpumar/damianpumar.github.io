@@ -3,8 +3,6 @@ CACHE MANIFEST
 CACHE:
 bckg/stamp-mask.png
 bckg/stamp.png
-ico/apple-touch-icon.png
-ico/favicon.ico
 blog/blog-01.png
 blog/blog-02.png
 blog/blog-03.png
@@ -17,6 +15,18 @@ blog/daft-punk-presentation.png
 blog/lee-2.png
 blog/lee.png
 blog/looper.jpg
+ico/apple-touch-icon.png
+ico/favicon.ico
+site/avatar.jpg
+site/avatar_metadata.jpg
+testimonials/1.jpg
+testimonials/2.jpg
+testimonials/3.jpg
+testimonials/4.jpg
+testimonials/5.jpg
+testimonials/6.jpg
+testimonials/7.jpg
+testimonials/8.jpg
 portfolio/20dejunio-01.jpg
 portfolio/20dejunio.png
 portfolio/awesomeserializer-01.png
@@ -42,16 +52,6 @@ portfolio/svelte-01.png
 portfolio/svelte.png
 portfolio/xamarinplugin-01.png
 portfolio/xamarinplugin.png
-testimonials/1.jpg
-testimonials/2.jpg
-testimonials/3.jpg
-testimonials/4.jpg
-testimonials/5.jpg
-testimonials/6.jpg
-testimonials/7.jpg
-testimonials/8.jpg
-site/avatar.jpg
-site/avatar_metadata.jpg
 
 NETWORK:
 http://*
@@ -61,4 +61,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 641f4221974f9e64c2bdbe085f219b4da1d25cbd45f8989a36d9d53abc0ec1a4
+# hash: 66ea45b677eb2be9f6b8c34929f9d8b9d38c44cb36d38c23f1ab3c1b2f465bd6
