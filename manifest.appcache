@@ -19,14 +19,6 @@ ico/apple-touch-icon.png
 ico/favicon.ico
 site/avatar.jpg
 site/avatar_metadata.jpg
-testimonials/1.jpg
-testimonials/2.jpg
-testimonials/3.jpg
-testimonials/4.jpg
-testimonials/5.jpg
-testimonials/6.jpg
-testimonials/7.jpg
-testimonials/8.jpg
 portfolio/20dejunio-01.jpg
 portfolio/20dejunio.png
 portfolio/awesomeserializer-01.png
@@ -52,6 +44,14 @@ portfolio/svelte-01.png
 portfolio/svelte.png
 portfolio/xamarinplugin-01.png
 portfolio/xamarinplugin.png
+testimonials/1.jpg
+testimonials/2.jpg
+testimonials/3.jpg
+testimonials/4.jpg
+testimonials/5.jpg
+testimonials/6.jpg
+testimonials/7.jpg
+testimonials/8.jpg
 
 NETWORK:
 http://*
@@ -61,4 +61,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 66ea45b677eb2be9f6b8c34929f9d8b9d38c44cb36d38c23f1ab3c1b2f465bd6
+# hash: a75a41bb579329fdce4d7a559cc4482eae733709ba0939bfda5b6eaa6f0ab384
