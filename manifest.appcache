@@ -19,8 +19,6 @@ flags/ar.png
 flags/it.png
 ico/apple-touch-icon.png
 ico/favicon.ico
-site/avatar.jpg
-site/avatar_metadata.jpg
 portfolio/20dejunio-01.jpg
 portfolio/20dejunio.png
 portfolio/awesomeserializer-01.png
@@ -48,6 +46,8 @@ portfolio/svelte-01.png
 portfolio/svelte.png
 portfolio/xamarinplugin-01.png
 portfolio/xamarinplugin.png
+site/avatar.jpg
+site/avatar_metadata.jpg
 testimonials/1.jpg
 testimonials/2.jpg
 testimonials/3.jpg
@@ -65,4 +65,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 6ea7f0ea5012fb3fd40063aa995858cdb1504cd66466737218c78b3a3b844bbd
+# hash: 231a77b9200cd2cfe97b9c92785ce53ed426d05c7f3ec8f9993063a649663f7e
