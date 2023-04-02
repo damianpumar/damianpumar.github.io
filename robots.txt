@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /images/*
-Allow: /images/site/avatar.jpg
+Allow: /images/site/avatar.png
 Disallow: *.html
 Allow: index.html
 Disallow: /css/*
