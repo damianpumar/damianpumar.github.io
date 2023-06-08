@@ -46,6 +46,8 @@ portfolio/svelte-01.png
 portfolio/svelte.png
 portfolio/xamarinplugin-01.png
 portfolio/xamarinplugin.png
+site/avatar.png
+site/avatar_metadata.png
 testimonials/1.jpg
 testimonials/2.jpg
 testimonials/3.jpg
@@ -54,8 +56,6 @@ testimonials/5.jpg
 testimonials/6.jpg
 testimonials/7.jpg
 testimonials/8.jpg
-site/avatar.png
-site/avatar_metadata.png
 
 NETWORK:
 http://*
@@ -65,4 +65,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: f13bc8dffc7bfda09618acadfc0943c3d0b08c1d5907992ebcba69ff9338a03a
+# hash: 09561f000dc09a1205ca03a3e08136cac1f467b765de80b6842afc6535b832db
