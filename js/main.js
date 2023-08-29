@@ -1,5 +1,5 @@
 /*!
- * My resume v.5.7.2023+ (https://www.damianpumar.com)
+ * My resume v.2.7.2023+ (https://www.damianpumar.com)
  * Copyright 2023 Damián Pumar
  * Licensed under  ()
  */
