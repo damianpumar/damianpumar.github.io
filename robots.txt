@@ -1,7 +1,4 @@
 User-agent: *
-Disallow: /images/*
-Allow: /images/site/avatar.png
-Disallow: *.html
-Allow: index.html
-Disallow: /css/*
-Disallow: /js/*
+Disallow: 
+Host: https://brutal.elian.codes/
+Sitemap: https://brutal.elian.codes/sitemap-index.xml
