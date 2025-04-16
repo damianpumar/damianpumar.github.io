@@ -1,4 +1,7 @@
 User-agent: *
-Disallow:
-Host: https://www.damianpumar.com/
-Sitemap: https://www.damianpumar.com/sitemap-index.xml
+Disallow: /images/*
+Allow: /images/site/avatar.png
+Disallow: *.html
+Allow: index.html
+Disallow: /css/*
+Disallow: /js/*

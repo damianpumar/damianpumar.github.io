@@ -1,2 +1,0 @@
-- email: pumar@duck.com
-- website: www.damianpumar.com
